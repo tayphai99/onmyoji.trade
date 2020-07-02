@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+body{max-width:1400px; font-family: arial; width: 100%; margin: 0 auto;background:#333;color:#fff;}
+.xbox{margin:20px;}
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {background:#ddd;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 15px;color:#111;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ccc;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+<div class="xbox">
+<h2>Alogame : Goddess Of Genesis</h2>
+1. Gõ tên tướng bạn muốn tìm vào thanh tìm kiếm để tìm nhanh<br /> 
+2. Lựa chọn combo SSR bạn muốn, kiểm tra xem đúng sv mong muốn chưa<br /> 
+3. Click mua ngay để chat trực tiếp với AD (7h-23h)<br />
+4. Danh sách tài khoản mới sẽ được cập nhập mỗi 3 tiếng một lần <br />  <br /> 
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th>Tên tướng</th>
+    <th>server</th>
+    <th>Triệu hồi</th>
+    <th>Giá</th>    <th>Mua ngay</th>
+
+  </tr>
+  <tr>
+    <td>Lucifer + Valkyria</td>
+    <td>Holy Land</td>
+    <td>x20</td>
+    <td>50k</td>    <th>Buy Now</th>
+  </tr>
+  <tr>
+    <td>Lucifer + Valkyria</td>
+    <td>Holy Land</td>
+    <td>x20</td>
+    <td>Lh</td>    <th>Buy Now</th>
+  </tr>
+  <tr>
+    <td>Lucifer + Valkyria</td>
+    <td>Holy Land</td>
+    <td>x20</td>
+    <td>Lh</td>    <th>Buy Now</th>
+  </tr>
+  <tr>
+    <td>Lilith + Valkyria</td>
+    <td>Holy Land</td>
+    <td>x20</td>
+    <td>Lh</td>    <th>Buy Now</th>
+  </tr>
+  <tr>
+    <td>Lilith + Valkyria</td>
+    <td>Holy Land</td>
+    <td>x20</td>   
+	<td>Lh</td> <th>Buy Now</th>
+  </tr>
+  <tr>
+    <td>Lilith + Valkyria + Joker</td>
+    <td>Holy Land</td>
+    <td>x20</td>
+    <td>Lh</td>    <th>Buy Now</th>
+  </tr>
+  <tr>
+    <td>Lilith + Valkyria</td>
+    <td>Holy Land</td>
+    <td>x20</td>
+    <td>Lh</td>    <th>Buy Now</th>
+  </tr>
+  <tr>
+    <td>Lilith + Valkyria</td>
+    <td>Holy Land</td>
+    <td>x20</td>
+    <td>Lh</td>    <th>Buy Now</th>
+  </tr>
+</table>
+</div>
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>
