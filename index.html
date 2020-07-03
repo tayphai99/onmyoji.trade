@@ -57,7 +57,7 @@ li {margin-bottom: 5px;}
 <ul>
 <li>Mua: inbox mã acc bạn muốn mua cho shop, bạn có thể thanh toán bằng momo, bank, thẻ zing, thẻ điện thoại.v.v...  </li> 
 <li>Trade: Chỉ trade acc bind tối đa 2/3 (gmail, tw, steam) + có 6 hột.. inbox gửi ảnh acc của bạn + mã acc bạn muốn trade cho shop</li>
-<li>Cập nhật: +30 acc mới mỗi ngày, tốc độ cập nhật acc mới 5h/lần và xóa bỏ acc đã bán 5 phút/lần, acc sẽ được cập nhập lên web đầu tiên, sau 1 tiếng sẽ cập nhập lên các gr</li> 
+<li>Cập nhật: +30 acc mới mỗi ngày, tốc độ cập nhật acc mới 5h/lần và xóa bỏ acc đã bán 5 phút/lần</li> 
 </ul>
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Tìm kiếm..">
 
@@ -363,28 +363,5 @@ function myFunction() {
 }
 </script>
 
-<!-- Load Facebook SDK for JavaScript -->
-      <div id="fb-root"></div>
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            xfbml            : true,
-            version          : 'v7.0'
-          });
-        };
-
-        (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
-
-      <!-- Your Chat Plugin code -->
-      <div class="fb-customerchat"
-        attribution=setup_tool
-        page_id="110100854097239">
-      </div>
 </body>
 </html>
