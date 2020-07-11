@@ -186,7 +186,7 @@
 		display: block;
 	}
 	.isotope_fillter .gallery_filter li{
-		width: calc(100% / 4);
+		width: calc(100% / 5);
 	}
 	.h_gallery_item {
 		max-width: 383px;
