@@ -512,7 +512,9 @@ button:focus {
 .isotope_fillter {
   background: #ffffff;
   border: 1px solid #eeeeee;
+  margin-top: 20px;
   margin-bottom: 80px;
+  padding: 10px;
 }
 
 .isotope_fillter .gallery_filter {
