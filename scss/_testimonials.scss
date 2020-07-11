@@ -1,0 +1,95 @@
+/* Testimonials Area css
+============================================================================================ */
+.testimonials_area{
+	background: $baseColor;
+	position: relative;
+	.owl-prev, .owl-next{
+		position: absolute;
+		right: 150px;
+		background: #fff;
+		font-size: 24px;
+		color: #c1c1c1;
+		padding-left: 10px;
+		padding-right: 10px;
+		@include transition;
+		cursor: pointer;
+		&:hover{
+			color: $dip;
+		}
+	}
+	.owl-prev{
+		bottom: 50%;
+		padding-top: 15px;
+		padding-bottom: 10px;
+		&:before{
+			content: "";
+			width: 28px;
+			background: #e8e8e8;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: 0px;
+			height: 1px;
+		}
+	}
+	.owl-next{
+		top: 50%;
+		padding-top: 10px;
+		padding-bottom: 15px;
+	}
+	
+}
+.testimonials_inner{}
+.c_feedback_text{
+	max-width: 430px;
+	margin-top: 44px;
+	h4{
+		font-size: 36px;
+		font-weight: bold;
+		color: $dip;
+		font-family: $pop;
+		margin-bottom: 18px;
+	}
+	p{
+		font-size: 14px;
+		line-height: 24px;
+		color: $dip;
+		font-family: $pop;
+		margin-bottom: 0px;
+	}
+}
+.t_slider{
+	background: #ffffff;
+	.item{
+		.media{
+			padding: 40px 45px 40px 40px;
+			.d-flex{
+				padding-right: 30px;
+			}
+			.media-body{
+				p{
+					font-size: 14px;
+					line-height: 24px;
+					font-family: $pop;
+					color: $pfont;
+					margin-bottom: 17px;
+				}
+				h4{
+					font-weight: bold;
+					color: $dip;
+					font-size: 18px;
+					margin-bottom: 8px;
+				}
+				h6{
+					font-size: 14px;
+					font-family: $pop;
+					font-weight: 300;
+					color: $pfont;
+					margin-bottom: 0px;
+				}
+			}
+		}
+	}
+}
+/* End Testimonials Area css
+============================================================================================ */

@@ -1,0 +1,104 @@
+/* Footer Area css
+============================================================================================ */
+.footer_area{
+	background: #04091e;
+}
+.footer_inner{
+	
+}
+.f_widget{}
+.f_title{
+	margin-bottom: 35px;
+	h3{
+		color: #fff;
+		font-size: 18px;
+		font-weight: 600;
+		font-family: $pop;
+		margin-bottom: 0px;
+	}
+}
+.ab_widget{
+	max-width: 390px;
+	p{
+		font-size: 14px;
+		line-height: 24px;
+		font-family: $pop;
+		color: $pfont;
+		margin-bottom: 30px;
+		a{
+			color: $baseColor;
+		}
+		& + p{
+			margin-bottom: 0px;
+		}
+	}
+}
+.news_widget{
+	padding-left: 15px;
+	p{
+		font-size: 14px;
+		line-height: 24px;
+		font-family: $pop;
+		color: $pfont;
+		margin-bottom: 15px;
+	}
+	.input-group{
+		input{
+			height: 40px;
+			background: #f9f9ff;
+			border-radius: 0px;
+			width: 100%;
+			border: none;
+			padding: 0px 15px;
+			font-size: 14px;
+			font-family: $pop;
+			color: #cccccc;
+			font-weight: 300;
+			@include placeholder{
+				font-size: 14px;
+				font-family: $pop;
+				color: #cccccc;
+				font-weight: 300;
+			}
+		}
+		.sub-btn{
+			border-radius: 0px;
+			background: $baseColor;
+			outline: none !important;
+			box-shadow: none !important;
+			padding: 0px;
+			width: 42px;
+			cursor: pointer;
+		}
+	}
+}
+.social_widget{
+	p{
+		font-size: 14px;
+		line-height: 24px;
+		font-family: $pop;
+		color: $pfont;
+		margin-bottom: 10px;
+	}
+	.list{
+		li{
+			margin-right: 17px;
+			display: inline-block;
+			a{
+				color: #cccccc;
+				font-size: 14px;
+				@include transition;
+			}
+			&:last-child{
+				margin-right: 0px;
+			}
+			&:hover{
+				a{
+					color: $baseColor;
+				}
+			}
+		}
+	}
+}
+/* End Footer Area css
+============================================================================================ */

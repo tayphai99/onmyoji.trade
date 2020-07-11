@@ -1,0 +1,34 @@
+/* Instagram Area css
+============================================================================================ */
+.instagram_area{
+	.insta_btn{
+		text-align: center;
+		padding-bottom: 80px;
+		.theme_btn{
+			line-height: 60px;
+			padding: 0px 28px;
+		}
+	}
+	&.top_pad{
+		padding-top: 120px;
+	}
+}
+.instagram_image{
+	a{
+		flex: 0 0 16.667%;
+		max-width: 16.667%;
+		display: block;
+		overflow: hidden;
+		img{
+			width: 100%;
+			transition: all 300ms ease;
+		}
+		&:hover{
+			img{
+				transform: scale(1.05);
+			}
+		}
+	}
+}
+/* End Instagram Area css
+============================================================================================ */

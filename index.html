@@ -1,466 +1,519 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-body{max-width:800px; font-family: arial; width: 100%; margin: 0 auto;background:#333;color:#fff;}
-.xbox{margin:20px;}
-#myInput {
-  background-image: url('/css/searchicon.png');
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  width: 100%;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
-  margin-bottom: 12px;
-}
-a {text-decoration-line: none;}
-.right {float:right;}
-.xemacc {padding: 5px 10px;
-    border-radius: 3px;
-    border: solid 1px #333;
-    text-decoration-line: none;
-    color: #222;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
-    font-size: 0.9rem;}
+<!doctype html>
+<html lang="vi">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="img/favicon.png" type="image/png">
+        <title>Onmyoji.trade</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="vendors/linericon/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="vendors/animate-css/animate.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
+        
+        <!--================Header Menu Area =================-->
+        <header class="header_area">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container box_1620">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav menu_nav ml-auto">
+                            <li class="nav-item active"><a class="nav-link" href="#">Tài Khoản Android</a></li> 
+                            <li class="nav-item"><a class="nav-link" href="#">Dịch Vụ</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Phản Hồi Khách Hàng</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Liên Hệ</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="nav-item"><a href="#" class="search"><i class="lnr lnr-magnifier"></i></a></li>
+                        </ul>
+                    </div> 
+                </div>
+            </nav>
+        </header>
+        <!--================Header Menu Area =================-->
 
-ul {padding-inline-start: 20px;}
-li {margin-bottom: 5px;}
-#myTable {background:#ddd;
-  border-collapse: collapse;
-  width: 100%;
-  border: 1px solid #ddd;
-  font-size: 15px;color:#111;
-}
+        
+        <!--================Home Gallery Area =================-->
+        <section class="home_gallery_area p_120">
+        	<div class="container">
+        		<div class="isotope_fillter">
+        			<ul class="gallery_filter list">
+						<li class="active" data-filter="*"><a href="#">All</a></li>
+						<li data-filter=".1d"><a href="#">1$</a></li>
+						<li data-filter=".2d"><a href="#">2$</a></li>
+						<li data-filter=".3d"><a href="#">3$</a></li>
+						<li data-filter=".4d"><a href="#">4$</a></li>
+						<li data-filter=".5d"><a href="#">5$</a></li>
+						<li data-filter=".6d"><a href="#">6$</a></li>
+						<li data-filter=".7d"><a href="#">7$</a></li>
+						<li data-filter=".8d"><a href="#">8$</a></li>
+						<li data-filter=".9d"><a href="#">9$</a></li>
+						<li data-filter=".10d"><a href="#">10$</a></li>
+						<li data-filter=".11d"><a href="#">11$</a></li>
+						<li data-filter=".12d"><a href="#">12$</a></li>
+						-
+						<li data-filter=".lv1"><a href="#">Lv1</a></li>
+						<li data-filter=".lv2"><a href="#">Lv2</a></li>
+						<li data-filter=".lv15"><a href="#">Lv15</a></li>
+						<li data-filter=".lv"><a href="#">Lv16+</a></li>
+						<hr />
+							<li data-filter=".SP-Tamamo-no-Mae"><a href="#">(SP) Tamamo no Mae</a></li>
+							<li data-filter=".SP-Ibaraki-Doji"><a href="#">(SP) Ibaraki Doji</a></li>
+							<li data-filter=".SP-Shuten-Doji"><a href="#">(SP) Shuten Doji</a></li>
+							<li data-filter=".SP-Onikiri"><a href="#">(SP) Onikiri</a></li>
+							<li data-filter=".SP-Ootengu"><a href="#">(SP) Ootengu</a></li>
+							<li data-filter=".SP-Oura-Hannya"><a href="#">(SP) Oura Hannya</a></li>
+							<li data-filter=".SP-Reikai-Kingyo-Hime"><a href="#">(SP) Reikai Kingyo Hime</a></li>
+							<li data-filter=".SP-Miketsu"><a href="#">(SP) Miketsu</a></li>
+							<li data-filter=".SP-Aoandon"><a href="#">(SP) Aoandon</a></li>
+							<li data-filter=".SP-Yoto-Hime"><a href="#">(SP) Yoto Hime</a></li>
+							<li data-filter=".SP-Ichimoku-Ren"><a href="#">(SP) Ichimoku Ren</a></li>
+							<li data-filter=".SP-Arakawa-no-Aruji"><a href="#">(SP) Arakawa no Aruji</a></li>
+						<hr />
+					
+						
+						
+						<li data-filter=".Suzuka-Gozen"><a href="#">Suzuka Gozen</a></li>
+						<li data-filter=".Tamamo-no-Mae"><a href="#">Tamamo no Mae</a></li>		
+						<li data-filter=".Ibaraki-Doji"><a href="#">Ibaraki Doji</a></li>
+						<li data-filter=".Shuten-Doji"><a href="#">Shuten Doji</a></li>
+						<li data-filter=".Takiyasha-Hime"><a href="#">Takiyasha Hime</a></li>			
+						<li data-filter=".Enmusubi-no-Kami"><a href="#">Enmusubi no Kami</a></li>
+						<li data-filter=".Shiranui"><a href="#">Shiranui</a></li>
+						<li data-filter=".Yamata-no-Orochi"><a href="#">Yamata no Orochi</a></li>				
+						<li data-filter=".Onikiri"><a href="#">Onikiri</a></li>
+						<li data-filter=".Ootakemaru"><a href="#">Ootakemaru</a></li>
+						<li data-filter=".Ungaikyou"><a href="#">Ungaikyou</a></li>			
+						<li data-filter=".Kidoumaru"><a href="#">Kidoumaru</a></li>
+						<li data-filter=".Ootengu"><a href="#">Ootengu</a></li>
+						<li data-filter=".Hakuzosu"><a href="#">Hakuzosu</a></li>			
+						<li data-filter=".Kacho-Fugetsu"><a href="#">Kacho Fugetsu</a></li>
+						<li data-filter=".Kaguya-Hime"><a href="#">Kaguya Hime</a></li>
+						<li data-filter=".Menreiki"><a href="#">Menreiki</a></li>
+						<li data-filter=".Oura-Hannya"><a href="#">Oura Hannya</a></li>
+						<li data-filter=".Miketsu"><a href="#">Miketsu</a></li>
+						<li data-filter=".Aoandon"><a href="#">Aoandon</a></li>
+						<li data-filter=".Susabi"><a href="#">Susabi</a></li>
+						<li data-filter=".Higanbana"><a href="#">Higanbana</a></li>
+						<li data-filter=".Yuki-Doji"><a href="#">Yuki Doji</a></li>
+						<li data-filter=".Yamakaze"><a href="#">Yamakaze</a></li>
+						<li data-filter=".Yoto-Hime"><a href="#">Yoto Hime</a></li>
+						<li data-filter=".Ichimoku-Ren"><a href="#">Ichimoku Ren</a></li>
+						<li data-filter=".Arakawa-no-Aruji"><a href="#">Arakawa no Aruji</a></li>
+						<li data-filter=".Enma"><a href="#">Enma</a></li>
+						<li data-filter=".Shishio"><a href="#">Shishio</a></li>
+				
+					
+					</ul>
+        		</div>
+        	</div>
+        	<div class="container box_1620">
+        		<div class="gallery_f_inner row imageGallery1">
+				
+        			<div class="col-lg-3 col-md-4 col-sm-6 lv15 7d SP-Ichimoku-Ren Suzuka-Gozen Miketsu Ichimoku-Ren">
+        				<div class="h_gallery_item">
+        					<img src="img/onmyoji-adr/L2 6.7 lv15 7d SP-Ichimoku-Ren Suzuka-Gozen Miketsu Ichimoku-Ren.png" alt="">
+        					<div class="hover">
+        						<a href="#"><h4>id: L2 / lv15 / 7$</h4></a>
+        						<a class="light" href="img/onmyoji-adr/L2 6.7 lv15 7d SP-Ichimoku-Ren Suzuka-Gozen Miketsu Ichimoku-Ren.png"><i class="fa fa-expand"></i></a>
+        					</div>
+        				</div>
+        			</div>
+									
+ 				
+        			<div class="col-lg-3 col-md-4 col-sm-6 lv15 2d SP-Ibaraki-Doji Ichimoku-Ren">
+        				<div class="h_gallery_item">
+        					<img src="img/onmyoji-adr/L3 6.7 lv15 2d SP-Ibaraki-Doji Ichimoku-Ren.png" alt="">
+        					<div class="hover">
+        						<a href="#"><h4>id: L3 / lv15 / 2$</h4></a>
+        						<a class="light" href="img/onmyoji-adr/L3 6.7 lv15 2d SP-Ibaraki-Doji Ichimoku-Ren.png"><i class="fa fa-expand"></i></a>
+        					</div>
+        				</div>
+        			</div>
+											
+        			<div class="col-lg-3 col-md-4 col-sm-6 lv15 12d SP-Tamamo-no-Mae Ootakemaru Yamata-no-Orochi Ibaraki-Doji">
+        				<div class="h_gallery_item">
+        					<img src="img/onmyoji-adr/L16 1.7 lv15 12d SP-Tamamo-no-Mae Ootakemaru Yamata-no-Orochi Ibaraki-Doji x3.png" alt="">
+        					<div class="hover">
+        						<a href="#"><h4>id: L16 / lv15 / 12$</h4></a>
+        						<a class="light" href="img/onmyoji-adr/L16 1.7 lv15 12d SP-Tamamo-no-Mae Ootakemaru Yamata-no-Orochi Ibaraki-Doji x3.png"><i class="fa fa-expand"></i></a>
+        					</div>
+        				</div>
+        			</div>
+											
+        			<div class="col-lg-3 col-md-4 col-sm-6 lv1 4d Suzuka-Gozen Ootakemaru">
+        				<div class="h_gallery_item">
+        					<img src="img/onmyoji-adr/L21 7.7 lv1 4d Suzuka-Gozen Ootakemaru.png" alt="">
+        					<div class="hover">
+        						<a href="#"><h4>id: L21 / lv1 / 4$</h4></a>
+        						<a class="light" href="img/onmyoji-adr/L21 7.7 lv1 4d Suzuka-Gozen Ootakemaru.png"><i class="fa fa-expand"></i></a>
+        					</div>
+        				</div>
+        			</div>
+											
+        			<div class="col-lg-3 col-md-4 col-sm-6 lv1 2d Suzuka-Gozen">
+        				<div class="h_gallery_item">
+        					<img src="img/onmyoji-adr/L25 7.7 lv1 2d Suzuka-Gozen.png" alt="">
+        					<div class="hover">
+        						<a href="#"><h4>id: L25 / lv1 / 2$</h4></a>
+        						<a class="light" href="img/onmyoji-adr/L25 7.7 lv1 2d Suzuka-Gozen.png"><i class="fa fa-expand"></i></a>
+        					</div>
+        				</div>
+        			</div>											
+        			<div class="col-lg-3 col-md-4 col-sm-6 lv1 2d Suzuka-Gozen">
+        				<div class="h_gallery_item">
+        					<img src="img/onmyoji-adr/L28 7.7 lv1 2d Suzuka-Gozen.png" alt="">
+        					<div class="hover">
+        						<a href="#"><h4>id: L28 / lv1 / 2$</h4></a>
+        						<a class="light" href="img/onmyoji-adr/L28 7.7 lv1 2d Suzuka-Gozen.png"><i class="fa fa-expand"></i></a>
+        					</div>
+        				</div>
+        			</div>											
+        			<div class="col-lg-3 col-md-4 col-sm-6 lv15 6d SP-Ootengu Suzuka-Gozen Susabi Yoto-Hime">
+        				<div class="h_gallery_item">
+        					<img src="img/onmyoji-adr/L30 6.7 lv15 6d SP-Ootengu Suzuka-Gozen Susabi Yoto-Hime.png" alt="">
+        					<div class="hover">
+        						<a href="#"><h4>id: L30 / lv15 / 6$</h4></a>
+        						<a class="light" href="img/onmyoji-adr/L30 6.7 lv15 6d SP-Ootengu Suzuka-Gozen Susabi Yoto-Hime.png"><i class="fa fa-expand"></i></a>
+        					</div>
+        				</div>
+        			</div>											
+        			<div class="col-lg-3 col-md-4 col-sm-6 lv15 10d SP-Aoandon SP-Ichimoku-Ren Shiranui Suzuka-Gozen">
+        				<div class="h_gallery_item">
+        					<img src="img/onmyoji-adr/L31 6.7 lv15 10d SP-Aoandon SP-Ichimoku-Ren Shiranui Suzuka-Gozen.png" alt="">
+        					<div class="hover">
+        						<a href="#"><h4>id: L31 / lv15 / 10$</h4></a>
+        						<a class="light" href="img/onmyoji-adr/L31 6.7 lv15 10d SP-Aoandon SP-Ichimoku-Ren Shiranui Suzuka-Gozen.png"><i class="fa fa-expand"></i></a>
+        					</div>
+        				</div>
+        			</div>											
+        			<div class="col-lg-3 col-md-4 col-sm-6 lv2 6d SP-Shuten-Doji Takiyasha-Hime">
+        				<div class="h_gallery_item">
+        					<img src="img/onmyoji-adr/N0 9.7 lv2 6d SP-Shuten-Doji Takiyasha-Hime.png" alt="">
+        					<div class="hover">
+        						<a href="#"><h4>id: N0 / lv2 / 6$</h4></a>
+        						<a class="light" href="img/onmyoji-adr/N0 9.7 lv2 6d SP-Shuten-Doji Takiyasha-Hime.png"><i class="fa fa-expand"></i></a>
+        					</div>
+        				</div>
+        			</div>											
+        			<div class="col-lg-3 col-md-4 col-sm-6 lv2 2d Suzuka-Gozen">
+        				<div class="h_gallery_item">
+        					<img src="img/onmyoji-adr/N3 10.7 lv2 2d Suzuka-Gozen.png" alt="">
+        					<div class="hover">
+        						<a href="#"><h4>id: N3 / lv2 / 2$</h4></a>
+        						<a class="light" href="img/onmyoji-adr/N3 10.7 lv2 2d Suzuka-Gozen.png"><i class="fa fa-expand"></i></a>
+        					</div>
+        				</div>
+        			</div>											
+        			<div class="col-lg-3 col-md-4 col-sm-6 lv2 3d SP-Ibaraki-Doji">
+        				<div class="h_gallery_item">
+        					<img src="img/onmyoji-adr/N5 10.7 lv2 3d SP-Ibaraki-Doji.png" alt="">
+        					<div class="hover">
+        						<a href="#"><h4>id: N5 / lv2 / 3$</h4></a>
+        						<a class="light" href="img/onmyoji-adr/N5 10.7 lv2 3d SP-Ibaraki-Doji.png"><i class="fa fa-expand"></i></a>
+        					</div>
+        				</div>
+        			</div>											
+        			<div class="col-lg-3 col-md-4 col-sm-6 lv2 3d  SP-Shuten-Doji">
+        				<div class="h_gallery_item">
+        					<img src="img/onmyoji-adr/N42 10.7 lv2 3d  SP-Shuten-Doji.png" alt="">
+        					<div class="hover">
+        						<a href="#"><h4>id: N42 / lv2 / 3$</h4></a>
+        						<a class="light" href="img/onmyoji-adr/N42 10.7 lv2 3d  SP-Shuten-Doji.png"><i class="fa fa-expand"></i></a>
+        					</div>
+        				</div>
+        			</div>											
+        			<div class="col-lg-3 col-md-4 col-sm-6 lv1 4d Suzuka-Gozen Menreiki">
+        				<div class="h_gallery_item">
+        					<img src="img/onmyoji-adr/N63 11.7 lv1 4d Suzuka-Gozen Menreiki.png" alt="">
+        					<div class="hover">
+        						<a href="#"><h4>id: N63 / lv1 / 4$</h4></a>
+        						<a class="light" href="img/onmyoji-adr/N63 11.7 lv1 4d Suzuka-Gozen Menreiki.png"><i class="fa fa-expand"></i></a>
+        					</div>
+        				</div>
+        			</div>											
+        			<div class="col-lg-3 col-md-4 col-sm-6 lv15 7d SP-Shuten-Doji Enmusubi-no-Kami">
+        				<div class="h_gallery_item">
+        					<img src="img/onmyoji-adr/N64 10.7 lv15 7d SP-Shuten-Doji Enmusubi-no-Kami.png" alt="">
+        					<div class="hover">
+        						<a href="#"><h4>id: N64 / lv15 / 7$</h4></a>
+        						<a class="light" href="img/onmyoji-adr/N64 10.7 lv15 7d SP-Shuten-Doji Enmusubi-no-Kami.png"><i class="fa fa-expand"></i></a>
+        					</div>
+        				</div>
+        			</div>											
+        			<div class="col-lg-3 col-md-4 col-sm-6 lv15 9d SP-Shuten-Doji Suzuka-Gozen Higanbana">
+        				<div class="h_gallery_item">
+        					<img src="img/onmyoji-adr/N70 9.7 lv15 9d SP-Shuten-Doji Suzuka-Gozen Higanbana.png" alt="">
+        					<div class="hover">
+        						<a href="#"><h4>id: N70 / lv15 / 9$</h4></a>
+        						<a class="light" href="img/onmyoji-adr/N70 9.7 lv15 9d SP-Shuten-Doji Suzuka-Gozen Higanbana.png"><i class="fa fa-expand"></i></a>
+        					</div>
+        				</div>
+        			</div>											
+        			<div class="col-lg-3 col-md-4 col-sm-6 lv15 3d SP-Shuten-Doji">
+        				<div class="h_gallery_item">
+        					<img src="img/onmyoji-adr/N71 10.7 lv15 3d SP-Shuten-Doji.png" alt="">
+        					<div class="hover">
+        						<a href="#"><h4>id: N71 / lv15 / 3$</h4></a>
+        						<a class="light" href="img/onmyoji-adr/N71 10.7 lv15 3d SP-Shuten-Doji.png"><i class="fa fa-expand"></i></a>
+        					</div>
+        				</div>
+        			</div>											
+        			<div class="col-lg-3 col-md-4 col-sm-6 lv15 9d SP-Shuten-Doji SP-Miketsu SP-Arakawa-no-Aruji Ootakemaru">
+        				<div class="h_gallery_item">
+        					<img src="img/onmyoji-adr/N73 5.7 lv15 9d SP-Shuten-Doji SP-Miketsu SP-Arakawa-no-Aruji Ootakemaru.png" alt="">
+        					<div class="hover">
+        						<a href="#"><h4>id: N73 / lv15 / 9$</h4></a>
+        						<a class="light" href="img/onmyoji-adr/N73 5.7 lv15 9d SP-Shuten-Doji SP-Miketsu SP-Arakawa-no-Aruji Ootakemaru.png"><i class="fa fa-expand"></i></a>
+        					</div>
+        				</div>
+        			</div>											
+        			<div class="col-lg-3 col-md-4 col-sm-6 lv15 9d SP-Tamamo-no-Mae Suzuka-Gozen Yamakaze">
+        				<div class="h_gallery_item">
+        					<img src="img/onmyoji-adr/N87 10.7 lv15 9d SP-Tamamo-no-Mae Suzuka-Gozen Yamakaze.png" alt="">
+        					<div class="hover">
+        						<a href="#"><h4>id: N87 / lv15 / 9$</h4></a>
+        						<a class="light" href="img/onmyoji-adr/N87 10.7 lv15 9d SP-Tamamo-no-Mae Suzuka-Gozen Yamakaze.png"><i class="fa fa-expand"></i></a>
+        					</div>
+        				</div>
+        			</div>											
+        			<div class="col-lg-3 col-md-4 col-sm-6 lv15 9d SP-Ibaraki-Doji SP-Ootengu Ootakemaru Onikiri">
+        				<div class="h_gallery_item">
+        					<img src="img/onmyoji-adr/N88 2.7 lv15 9d SP-Ibaraki-Doji SP-Ootengu Ootakemaru Onikiri.png" alt="">
+        					<div class="hover">
+        						<a href="#"><h4>id: N88 / lv15 / 9$</h4></a>
+        						<a class="light" href="img/onmyoji-adr/N88 2.7 lv15 9d SP-Ibaraki-Doji SP-Ootengu Ootakemaru Onikiri.png"><i class="fa fa-expand"></i></a>
+        					</div>
+        				</div>
+        			</div>											
+        			<div class="col-lg-3 col-md-4 col-sm-6 lv15 5d SP-Shuten-Doji Onikiri Higanbana">
+        				<div class="h_gallery_item">
+        					<img src="img/onmyoji-adr/N89 1.7 lv15 5d SP-Shuten-Doji Onikiri Higanbana.png" alt="">
+        					<div class="hover">
+        						<a href="#"><h4>id: N89 / lv15 / 5$</h4></a>
+        						<a class="light" href="img/onmyoji-adr/N89 1.7 lv15 5d SP-Shuten-Doji Onikiri Higanbana.png"><i class="fa fa-expand"></i></a>
+        					</div>
+        				</div>
+        			</div>											
+        			<div class="col-lg-3 col-md-4 col-sm-6 lv15 2d SP-Ibaraki-Doji">
+        				<div class="h_gallery_item">
+        					<img src="img/onmyoji-adr/N98 10.7 lv15 2d SP-Ibaraki-Doji.png" alt="">
+        					<div class="hover">
+        						<a href="#"><h4>id: N98 / lv15 / 2$</h4></a>
+        						<a class="light" href="img/onmyoji-adr/N98 10.7 lv15 2d SP-Ibaraki-Doji.png"><i class="fa fa-expand"></i></a>
+        					</div>
+        				</div>
+        			</div>											
+        			<div class="col-lg-3 col-md-4 col-sm-6 lv15 2d SP-Ibaraki-Doji">
+        				<div class="h_gallery_item">
+        					<img src="img/onmyoji-adr/N106 9.7 lv15 2d SP-Ibaraki-Doji.png" alt="">
+        					<div class="hover">
+        						<a href="#"><h4>id: N106 / lv15 / 2$</h4></a>
+        						<a class="light" href="img/onmyoji-adr/N106 9.7 lv15 2d SP-Ibaraki-Doji.png"><i class="fa fa-expand"></i></a>
+        					</div>
+        				</div>
+        			</div>											
+        			<div class="col-lg-3 col-md-4 col-sm-6 lv2 2d Enmusubi-no-Kami">
+        				<div class="h_gallery_item">
+        					<img src="img/onmyoji-adr/N110 10.7 lv2 2d Enmusubi-no-Kami.png" alt="">
+        					<div class="hover">
+        						<a href="#"><h4>id: N110 / lv2 / 2$</h4></a>
+        						<a class="light" href="img/onmyoji-adr/N110 10.7 lv2 2d Enmusubi-no-Kami.png"><i class="fa fa-expand"></i></a>
+        					</div>
+        				</div>
+        			</div>											
+        			<div class="col-lg-3 col-md-4 col-sm-6 lv15 3d SP-Shuten-Doji Yoto-Hime">
+        				<div class="h_gallery_item">
+        					<img src="img/onmyoji-adr/N113 9.7 lv15 3d SP-Shuten-Doji Yoto-Hime.png" alt="">
+        					<div class="hover">
+        						<a href="#"><h4>id: N113 / lv15 / 3$</h4></a>
+        						<a class="light" href="img/onmyoji-adr/N113 9.7 lv15 3d SP-Shuten-Doji Yoto-Hime.png"><i class="fa fa-expand"></i></a>
+        					</div>
+        				</div>
+        			</div>											
+        			<div class="col-lg-3 col-md-4 col-sm-6 lv15 2d Suzuka-Gozen Shishio">
+        				<div class="h_gallery_item">
+        					<img src="img/onmyoji-adr/N124 9.7 lv15 2d Suzuka-Gozen Shishio.png" alt="">
+        					<div class="hover">
+        						<a href="#"><h4>id: N124 / lv15 / 2$</h4></a>
+        						<a class="light" href="img/onmyoji-adr/N124 9.7 lv15 2d Suzuka-Gozen Shishio.png"><i class="fa fa-expand"></i></a>
+        					</div>
+        				</div>
+        			</div>											
+        			<div class="col-lg-3 col-md-4 col-sm-6 lv15 7d Yamata-no-Orochi Suzuka-Gozen Kacho-Fugetsu">
+        				<div class="h_gallery_item">
+        					<img src="img/onmyoji-adr/N134 2.7 lv15 7d Yamata-no-Orochi Suzuka-Gozen Kacho-Fugetsu.png" alt="">
+        					<div class="hover">
+        						<a href="#"><h4>id: N134 / lv15 / 7$</h4></a>
+        						<a class="light" href="img/onmyoji-adr/N134 2.7 lv15 7d Yamata-no-Orochi Suzuka-Gozen Kacho-Fugetsu.png"><i class="fa fa-expand"></i></a>
+        					</div>
+        				</div>
+        			</div>			
+					
+        			      <!--========<div class="col-lg-3 col-md-4 col-sm-6 ">
+        				<div class="h_gallery_item">
+        					<img src="img/onmyoji-adr/.png" alt="">
+        					<div class="hover">
+        						<a href="#"><h4>id: $</h4></a>
+        						<a class="light" href="img/onmyoji-adr/.png"><i class="fa fa-expand"></i></a>
+        					</div>
+        				</div>
+        			</div>		====-->		
 
-#myTable th, #myTable td {
-  text-align: left;
-  padding: 12px;
-}
-
-#myTable tr {
-  border-bottom: 1px solid #ccc;
-}
-
-#myTable tr.header, #myTable tr:hover {
-  background-color: #f1f1f1;
-}
-</style>
-</head>
-<body>
-<div class="xbox">
-<h1>Onmyoji.trade</h1>
-<ul>
-<li>Mua: inbox mã acc bạn muốn mua cho shop, bạn có thể thanh toán bằng momo, bank, thẻ zing, thẻ điện thoại.v.v...  </li> 
-<li>Trade: Chỉ trade acc bind tối đa 2/3 (gmail, tw, steam) + có 6 hột.. inbox gửi ảnh acc của bạn + mã acc bạn muốn trade cho shop</li>
-<li>Cập nhật: +30 acc mới mỗi ngày, tốc độ cập nhật acc mới 5h/lần và xóa bỏ acc đã bán 5 phút/lần</li> 
-</ul>
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Tìm kiếm..">
-
-<table id="myTable">
-  <tr class="header">
-    <th>Thức thần & thông tin acc android</th>
-	<th width="120px;"></th>
-  </tr>
-  
-
-<tr><td>Nội sp + ĐNH + Tám + Tỳ + Tỳ + Tỳ, chưa bind, mã L16 = 280k</td>
-<td class="right"><a href="img/android-lv15/Nội sp + ĐNH + Tám + Tỳ + Tỳ + Tỳ, chưa bind, mã L16 = 280k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-</tr> 
-   
-<tr><td>Cẩu + Kính, chưa bind, mã L20 = 70k</td>
-<td class="right"><a href="img/android-lv15/Cẩu + Kính, chưa bind, mã L20 = 70k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-</tr> 
-   
-<tr><td>ĐNH + Kohaku, chưa bind, mã L22 = 60k</td>
-<td class="right"><a href="img/android-lv15/ĐNH + Kohaku, chưa bind, mã L22 = 60k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-</tr> 
-    
-<tr><td>Kido + Hằng sp + Điểu, chưa bind, mã L7 = 80k</td>
-<td class="right"><a href="img/android-lv15/Kido + Hằng sp + Điểu, chưa bind, mã L7 = 80k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-</tr> 
-    
-
-    
-<tr><td>Kính + Tỳ + Hằng, chưa bind, mã L14 = 80k</td>
-<td class="right"><a href="img/android-lv15/Kính + Tỳ + Hằng, chưa bind, mã L14 = 80k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-</tr> 
-    
-<tr><td>Nhã sp + Diện, chưa bind, mã L8 = 40k</td>
-<td class="right"><a href="img/android-lv15/Nhã sp + Diện, chưa bind, mã L8 = 40k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-</tr> 
-    
-<tr><td>Nhã sp + Liên (+cò), chưa bind, mã L23 = 40k</td>
-<td class="right"><a href="img/android-lv15/Nhã sp + Liên (+cò), chưa bind, mã L23 = 40k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-</tr> 
-    
-<tr><td>Nội + ĐNH + Diêm, chưa bind, mã L13 = 80k</td>
-<td class="right"><a href="img/android-lv15/Nội + ĐNH + Diêm, chưa bind, mã L13 = 80k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-</tr> 
-    
-<tr><td>Nội + Kính + Thiết sp, chưa bind, mã L35 = 150k</td>
-<td class="right"><a href="img/android-lv15/Nội + Kính + Thiết sp, chưa bind, mã L35 = 150k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-</tr> 
-    
-<tr><td>Tỳ + Tửu + Hoang, chưa bind, mã L19 = 80k</td>
-<td class="right"><a href="img/android-lv15/Tỳ + Tửu + Hoang, chưa bind, mã L19 = 80k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-</tr> 
-   
-     <tr>
-    <td>Đao sp + Tỳ, chưa bind, mã L10 = 60k</td>
-	<td class="right"><a href="img/android-lv15/Đao sp + Tỳ, chưa bind, mã L10 = 60k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>  
-     <tr><td>Duyên + Hằng sp + Hoang (+cua), chưa bind, mã L27 = 80k</td>
-	<td class="right"><a href="img/android-lv15/Duyên + Hằng sp + Hoang (+cua), chưa bind, mã L27 = 80k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>  
-     <tr> <td>Linh Lộc + Aly-Bth + Hằng sp + Liên sp, chưa bind, mã L31 = 200k</td>
-	<td class="right"><a href="img/android-lv15/Linh Lộc + Aly-Bth + Hằng sp + Liên sp, chưa bind, mã L31 = 200k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>  
-     <tr> <td>Linh Lộc + Đao + Hoang (+cua), chưa bind, mã L30 = 110k</td>
-	<td class="right"><a href="img/android-lv15/Linh Lộc + Đao + Hoang (+cua), chưa bind, mã L30 = 110k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>  
-     <tr> <td>Linh Lộc + Liên sp + Lúa + Liên (skin), chưa bind. mã L2 = 150k</td>
-	<td class="right"><a href="img/android-lv15/Linh Lộc + Liên sp + Lúa + Liên (skin), chưa bind. mã L2 = 150k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>  
-      <tr><td>Nội (skin) + Kido, chưa bind, mã L1 = 90k</td>
-	<td class="right"><a href="img/android-lv15/Nội (skin) + Kido, chưa bind, mã L1 = 90k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>  
-     <tr> <td>Tám + ĐNH + Aly + Cẩu, chưa bind, mã L17 = 180k</td>
-	<td class="right"><a href="img/android-lv15/Tám + ĐNH + Aly-Bth + Cẩu, chưa bind, mã L17 = 180k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>  
-     <tr> <td>Tỳ sp + Liên, chưa bind, mã L3 = 60k</td>
-	<td class="right"><a href="img/android-lv15/Tỳ sp + Liên, chưa bind, mã L3 = 60k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>  
- 
- 
-  
- 
-     <tr>
-    <td>Aly-Bth + Tỳ, chưa bind, mã N2 = 80k</td>
-	<td class="right"><a href="img/android-lv15/Aly-Bth + Tỳ, chưa bind, mã N2 = 80k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>  
-
-     <tr>
-    <td>Nội + Thiết sp + Kohaku, chưa bind, mã N118 = 150k</td>
-	<td class="right"><a href="img/android-lv15/Nội + Thiết sp + Kohaku, chưa bind, mã N118 = 150k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>  
-
-    
-       <tr>
-    <td>Duyên + Cẩu + Nhã sp + Tuyết, chưa bind, mã N129 = 120k</td>
-	<td class="right"><a href="img/android-lv15/Duyên + Cẩu + Nhã sp + Tuyết, chưa bind, mã N129 = 120k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>   
-
-   
-       <tr>
-    <td>Kính + Aly-Bth (+cua), chưa bind, mã N69 = 70k</td>
-	<td class="right"><a href="img/android-lv15/Kính + Aly-Bth (+cua), chưa bind, mã N69 = 70k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>   
-       <tr>
-    <td>Kính + Tỳ, chưa bind, mã N125 = 70k</td>
-	<td class="right"><a href="img/android-lv15/Kính + Tỳ, chưa bind, mã N125 = 70k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>   
-       <tr>
-    <td>Lang + Liên + Hằng, chưa bind, mã N122 = 70k</td>
-	<td class="right"><a href="img/android-lv15/Lang + Liên + Hằng, chưa bind, mã N122 = 70k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>   
-       <tr>
-    <td>Nội (skin) + Kohaku + Kohaku + Diêm, chưa bind, mã N132 = 90k</td>
-	<td class="right"><a href="img/android-lv15/Nội (skin) + Kohaku + Kohaku + Diêm, chưa bind, mã N132 = 90k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>   
-   
-       <tr>
-    <td>Tửu sp + Lúa sp + Hoang Xuyên sp + ĐNH, chưa bind, mã N73 = 180k</td>
-	<td class="right"><a href="img/android-lv15/Tửu sp + Lúa sp + Hoang Xuyên sp + ĐNH, chưa bind, mã N73 = 180k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>   
-
-       <tr>
-    <td>Cẩu sp + Lúa sp + Cẩu + Điểu, chưa bind, mã N115 = 80k</td>
-	<td class="right"><a href="img/android-lv15/Cẩu sp + Lúa sp + Cẩu + Điểu, chưa bind, mã N115 = 80k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>     
-    
-    
-       <tr>
-    <td>Lúa sp + Điểu + Diêm + Tửu, chưa bind, mã N105 = 80k</td>
-	<td class="right"><a href="img/android-lv15/Lúa sp + Điểu + Diêm + Tửu, chưa bind, mã N105 = 80k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>     
-
-   
-       <tr>
-    <td>Kính + Duyên + Điểu + Thiết (skin), chưa bind, mã N96 = 180k</td>
-	<td class="right"><a href="img/android-lv15/Kính + Duyên + Điểu + Thiết (skin), chưa bind, mã N96 = 180k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>     
-       <tr>
-    <td>Lang + Thiết sp, chưa bind, mã N104 = 80k</td>
-	<td class="right"><a href="img/android-lv15/Lang + Thiết sp, chưa bind, mã N104 = 80k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>     
-       <tr>
-    <td>Nội + Kính + Kim Ngư Cơ sp + Điểu (skin), chưa bind, mã N120 =180k</td>
-	<td class="right"><a href="img/android-lv15/Nội + Kính + Kim Ngư Cơ sp + Điểu (skin), chưa bind, mã N120 =180k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>     
-     
-       <tr>
-    <td>Thiết + Tỳ + Diện, chưa bind, mã N56 = 80k</td>
-	<td class="right"><a href="img/android-lv15/Thiết + Tỳ + Diện, chưa bind, mã N56 = 80k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>     
-
-  
-       <tr>
-    <td>ĐNH + Thiết + Hằng + Liên, chưa bind, mã N93 =100k</td>
-	<td class="right"><a href="img/android-lv15/ĐNH + Thiết + Hằng + Liên, chưa bind, mã N93 =100k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr> 
-    
-       <tr>
-    <td>Hằng sp + Tre + Đao + Diêm + Tửu, chưa bind, mã N57 =130k</td>
-	<td class="right"><a href="img/android-lv15/Hằng sp + Tre + Đao + Diêm + Tửu, chưa bind, mã N57 =130k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>     
-
-       <tr>
-    <td>Nội + ĐNH + Hằng, chưa bind, mã N54 = 100k</td>
-	<td class="right"><a href="img/android-lv15/Nội + ĐNH + Hằng, chưa bind, mã N54 = 100k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>     
-       <tr>
-    <td>Tửu sp + Đao sp + Lang, chưa bind, mã N123 =150k</td>
-	<td class="right"><a href="img/android-lv15/Tửu sp + Đao sp + Lang, chưa bind, mã N123 =150k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>     
-       <tr>
-    <td>Tửu sp + Thiết + Bỉ, chưa bind, mã N89 =100k</td>
-	<td class="right"><a href="img/android-lv15/Tửu sp + Thiết + Bỉ, chưa bind, mã N89 =100k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>     
-   
-     
-       <tr>
-    <td>Tỳ sp + Cẩu sp + ĐNH + Thiết, chưa bind, mã N88 = 180k</td>
-	<td class="right"><a href="img/android-lv15/Tỳ sp + Cẩu sp + ĐNH + Thiết, chưa bind, mã N88 = 180k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>     
-  
-  <tr>
-    <td>Đao sp + Hằng sp + Tám + Tám, N59 = 120k</td>
-	<td class="right"><a href="img/android-lv15/Đao sp + Hằng sp + Tám + Tám, N59 = 120k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-       <tr>
-    <td>Linh Lộc + Tám + Điểu, mã N134 = 150k</td>
-	<td class="right"><a href="img/android-lv15/Linh Lộc + Tám + Điểu, mã N134 = 150k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-
-         <tr>
-    <td>Nhã sp + Tre, mã N113 = 30k</td>
-	<td class="right"><a href="img/android-lv15/Nhã sp + Tre, mã N113 = 30k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-         <tr>
-    <td>Nội + Kido + Đao, mã N52 = 80k</td>
-	<td class="right"><a href="img/android-lv15/Nội + Kido + Đao, mã N52 = 80k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-         <tr>
-    <td>Nội + Liên (skin) + Diện + Lúa, mã N47 = 100k</td>
-	<td class="right"><a href="img/android-lv15/Nội + Liên (skin) + Diện + Lúa, mã N47 = 100k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-         <tr>
-    <td>Nội + Tỳ + Tửu + Sơn Phong, Mã N55 = 150k</td>
-	<td class="right"><a href="img/android-lv15/Nội + Tỳ + Tửu + Sơn Phong, Mã N55 = 150k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-         <tr>
-    <td>Tám + Hoang Xuyên sp + Điểu + Hằng, mã N53 = 80k</td>
-	<td class="right"><a href="img/android-lv15/Tám + Hoang Xuyên sp + Điểu + Hằng, mã N53 = 80k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-
-         <tr>
-    <td>Tửu + Tám + Liên sp, mã N6 = 100k</td>
-	<td class="right"><a href="img/android-lv15/Tửu + Tám + Liên sp, mã N6 = 100k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-  
-   <tr>
-    <td>Aly-Bth + Cẩu (skin) + Thiết sp, chưa bind, mã N112 = 130k</td>
-	<td class="right"><a href="img/android-lv15/Aly-Bth + Cẩu (skin) + Thiết sp, chưa bind, mã N112 = 130k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-
-
-     <tr>
-    <td>Aly-Bth + Tám + Tỳ, chưa bind, mã N81 = 150k</td>
-	<td class="right"><a href="img/android-lv15/Aly-Bth + Tám + Tỳ, chưa bind, mã N81 = 150k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-     <tr>
-    <td>Aly-Bth + Tám + Tỳ, chưa bind, mã N83 = 150k</td>
-	<td class="right"><a href="img/android-lv15/Aly-Bth + Tám + Tỳ, chưa bind, mã N83 = 150k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-     <tr>
-    <td>Aly-Bth + Lúa + Lúa + Hoang Xuyên sp (+cua), chưa bind, mã 84 = 80k</td>
-	<td class="right"><a href="img/android-lv15/Aly-Bth + Lúa + Lúa + Hoang Xuyên sp (+cua), chưa bind, mã 84 = 80k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-
-
-     <tr>
-    <td>Lang + Lang  + Tỳ, chưa bind, mã N79 = 100k</td>
-	<td class="right"><a href="img/android-lv15/Lang + Lang  + Tỳ, chưa bind, mã N79 = 100k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-     <tr>
-    <td>Nội + Đao sp, chưa bind, mã N46 = 90k</td>
-	<td class="right"><a href="img/android-lv15/Nội + Đao sp, chưa bind, mã N46 = 90k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-  
-
- 
-
-      <tr>
-    <td>Duyên + Tám + Hoang Xuyên, mã  N100 = 80k</td>
-	<td class="right"><a href="img/android-lv15/Duyên + Tám + Hoang Xuyên, mã  N100 = 80k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-      <tr>
-    <td>Duyên + Liên (+cua), mã N119 = 35k</td>
-	<td class="right"><a href="img/android-lv15/Duyên + Liên (+cua), mã N119 = 35k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-
-
-   <tr>
-    <td>Cẩu + Lúa sp + ĐNH, lv15, chưa bind, mã N97 = 70k</td>
-	<td class="right"><a href="img/android-lv15/Cẩu + Lúa sp + ĐNH, lv15, chưa bind, mã N97 = 70k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-   <tr>
-    <td>Đao sp + Hằng sp, lv15, chưa bind, mã N82 = 90k</td>
-	<td class="right"><a href="img/android-lv15/Đao sp + Hằng sp, lv15, chưa bind, mã N82 = 90k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-   <tr>
-    <td>Đao sp + Kính + Sơn Phong, lv15, chưa bind, mã N44 = 90k</td>
-	<td class="right"><a href="img/android-lv15/Đao sp + Kính + Sơn Phong, lv15, chưa bind, mã N44 = 90k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-
-   <tr>
-    <td>Duyên + Lúa sp + Điểu, lv15, chưa bind, mã N78 = 70k</td>
-	<td class="right"><a href="img/android-lv15/Duyên + Lúa sp + Điểu, lv15, chưa bind, mã N78 = 70k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-   <tr>
-    <td>Hằng sp + Lúa + Aly-Bth, lv15, chưa bind, mã N107 = 90k</td>
-	<td class="right"><a href="img/android-lv15/Hằng sp + Lúa + Aly-Bth, lv15, chưa bind, mã N107 = 90k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-   <tr>
-    <td>Kido + Cẩu sp + Kính + Tỳ, lv15, chưa bind, mã L12 = 150k</td>
-	<td class="right"><a href="img/android-lv15/Kido + Cẩu sp + Kính + Tỳ, lv15, chưa bind, mã L12 = 150k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-   <tr>
-    <td>Kính + Đao sp + Tre, lv15, chưa bind, mã N75 = 80k</td>
-	<td class="right"><a href="img/android-lv15/Kính + Đao sp + Tre, lv15, chưa bind, mã N75 = 80k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-   <tr>
-    <td>Kính + ĐNH + Tuyết + Đao + Hoang Xuyên, lv15, chưa bind, mã N39 = 120k</td>
-	<td class="right"><a href="img/android-lv15/Kính + ĐNH + Tuyết + Đao + Hoang Xuyên, lv15, chưa bind, mã N39 = 120k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-
-   <tr>
-    <td>Kính + Tuyết + Hằng, lv15, chưa bind, mã N77 = 70k</td>
-	<td class="right"><a href="img/android-lv15/Kính + Tuyết + Hằng, lv15, chưa bind, mã N77 = 70k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-
-   <tr>
-    <td>Lang + Đao + Liên sp + Lộc + Hoang Xuyên, lv15, chưa bind, mã N68 = 120k</td>
-	<td class="right"><a href="img/android-lv15/Lang + Đao + Liên sp + Lộc + Hoang Xuyên, lv15, chưa bind, mã N68 = 120k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-   <tr>
-    <td>Lang + ĐNH, lv15, chưa bind, mã N45 = 90k</td>
-	<td class="right"><a href="img/android-lv15/Lang + ĐNH, lv15, chưa bind, mã N45 = 90k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-
-   <tr>
-    <td>Nội + Tám + Lộc + Sơn Phong, lv15, chưa bind, mã N95 = 150k</td>
-	<td class="right"><a href="img/android-lv15/Nội + Tám + Lộc + Sơn Phong, lv15, chưa bind, mã N95 = 150k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-
-   <tr>
-    <td>Tám + Kim Ngư Cơ sp, lv15, chưa bind, mã N66 = 80k</td>
-	<td class="right"><a href="img/android-lv15/Tám + Kim Ngư Cơ sp, lv15, chưa bind, mã N66 = 80k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-   <tr>
-    <td>Tám + Kính + Diêm, lv15, chưa bind, mã N130 = 90k</td>
-	<td class="right"><a href="img/android-lv15/Tám + Kính + Diêm, lv15, chưa bind, mã N130 = 90k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-
-
-   <tr>
-    <td>Thiết + Lúa sp + Lúa, lv15, chưa bind, mã N14 = 80k</td>
-	<td class="right"><a href="img/android-lv15/Thiết + Lúa sp + Lúa, lv15, chưa bind, mã N14 = 80k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-   <tr>
-    <td>Tửu + ĐNH + Kohaku, lv15, chưa bind, mã N65 = 90k</td>
-	<td class="right"><a href="img/android-lv15/Tửu + ĐNH + Kohaku, lv15, chưa bind, mã N65 = 90k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-   <tr>
-    <td>Tửu + Tửu + Lộc + Diêm, lv15, chưa bind, mã N133 = 80k</td>
-	<td class="right"><a href="img/android-lv15/Tửu + Tửu + Lộc + Diêm, lv15, chưa bind, mã N133 = 80k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-
-   <tr>
-    <td>Tỳ + Hằng + Lộc + Sơn Phong, lv15, chưa bind, mã N140 = 80k</td>
-	<td class="right"><a href="img/android-lv15/Tỳ + Hằng + Lộc + Sơn Phong, lv15, chưa bind, mã N140 = 80k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-   <tr>
-    <td>Tỳ + Kido + Hoang, lv15, chưa bind, mã N8 = 80k</td>
-	<td class="right"><a href="img/android-lv15/Tỳ + Kido + Hoang, lv15, chưa bind, mã N8 = 80k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-
-   <tr>
-    <td>Tỳ + Thiết + Kido, lv15, chưa bind, mã N67 = 90k</td>
-	<td class="right"><a href="img/android-lv15/Tỳ + Thiết + Kido, lv15, chưa bind, mã N67 = 90k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-   <tr>
-    <td>Tỳ + Thiết sp, lv15, chưa bind, mã N128 = 80k</td>
-	<td class="right"><a href="img/android-lv15/Tỳ + Thiết sp, lv15, chưa bind, mã N128 = 80k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-   <tr>
-    <td>Tỳ + Tuyết + Kim Ngư Cơ sp, lv15, chưa bind, mã N35 = 80k</td>
-	<td class="right"><a href="img/android-lv15/Tỳ + Tuyết + Kim Ngư Cơ sp, lv15, chưa bind, mã N35 = 80k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
-   <tr>
-    <td>Tỳ + Tỳ + Hoang Xuyên + Sơn Phong, lv15, chưa bind, mã N18 = 80k</td>
-	<td class="right"><a href="img/android-lv15/Tỳ + Tỳ + Hoang Xuyên + Sơn Phong, lv15, chưa bind, mã N18 = 80k.jpg" target="_bank"><span  class="xemacc">Xem acc</span></a></td>
-  </tr>
- 
-</table>
-</div>
-<script>
-function myFunction() {
-  var input, filter, table, tr, td, i, txtValue;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTable");
-  tr = table.getElementsByTagName("tr");
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
-    if (td) {
-      txtValue = td.textContent || td.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }       
-  }
-}
-</script>
-<!-- Load Facebook SDK for JavaScript -->
-      <div id="fb-root"></div>
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            xfbml            : true,
-            version          : 'v7.0'
-          });
-        };
-
-        (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
-
-      <!-- Your Chat Plugin code -->
-      <div class="fb-customerchat"
-        attribution=setup_tool
-        page_id="110100854097239">
-      </div>
-</body>
+					
+					
+					
+        		</div>
+      
+        	</div>
+        </section>
+        <!--================End Home Gallery Area =================-->
+        
+        <!--================Testimonials Area =================--
+        <section class="testimonials_area p_120">
+        	<div class="container">
+        		<div class="row testimonials_inner">
+        			<div class="col-lg-6">
+        				<div class="c_feedback_text">
+        					<h4>Client’s Feedback</h4>
+        					<p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+        				</div>
+        			</div>
+        			<div class="col-lg-6">
+        				<div class="t_slider owl-carousel">
+        					<div class="item">
+        						<div class="media">
+        							<div class="d-flex">
+        								<img src="img/testimonials/test-1.png" alt="">
+        							</div>
+        							<div class="media-body">
+        								<p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware.</p>
+        								<h4>Mark Alviro Wiens</h4>
+        								<h6>CEO at Google</h6>
+        							</div>
+        						</div>
+        					</div>
+        					<div class="item">
+        						<div class="media">
+        							<div class="d-flex">
+        								<img src="img/testimonials/test-1.png" alt="">
+        							</div>
+        							<div class="media-body">
+        								<p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware.</p>
+        								<h4>Mark Alviro Wiens</h4>
+        								<h6>CEO at Google</h6>
+        							</div>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Testimonials Area =================-->
+        
+        <!--================Service Area =================--
+        <section class="service_area p_120">
+        	<div class="container">
+        		<div class="main_title">
+        			<h2>Why we are the best</h2>
+        			<p>Who are in extremely love with eco friendly system.</p>
+        		</div>
+        		<div class="row service_inner">
+        			<div class="col-lg-4 col-md-6">
+        				<div class="service_item">
+        					<a href="#"><h4>Expert Technicians</h4></a>
+        					<p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-6">
+        				<div class="service_item">
+        					<a href="#"><h4>Professional Service</h4></a>
+        					<p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-6">
+        				<div class="service_item">
+        					<a href="#"><h4>Great Support</h4></a>
+        					<p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-6">
+        				<div class="service_item">
+        					<a href="#"><h4>Technical Skills</h4></a>
+        					<p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-6">
+        				<div class="service_item">
+        					<a href="#"><h4>Highly Recomended</h4></a>
+        					<p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-6">
+        				<div class="service_item">
+        					<a href="#"><h4>Positive Reviews</h4></a>
+        					<p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Service Area =================-->
+        
+        <!--================Instagram Area =================--
+        <section class="instagram_area">
+        	<div class="container box_1620">
+        		<div class="insta_btn">
+        			<a class="btn theme_btn" href="#">Follow us on instagram</a>
+        		</div>
+        		<div class="instagram_image row m0">
+        			<a href="#"><img src="img/instagram/ins-1.jpg" alt=""></a>
+        			<a href="#"><img src="img/instagram/ins-2.jpg" alt=""></a>
+        			<a href="#"><img src="img/instagram/ins-3.jpg" alt=""></a>
+        			<a href="#"><img src="img/instagram/ins-4.jpg" alt=""></a>
+        			<a href="#"><img src="img/instagram/ins-5.jpg" alt=""></a>
+        			<a href="#"><img src="img/instagram/ins-6.jpg" alt=""></a>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Instagram Area =================-->
+        
+       
+        
+        
+        
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="vendors/isotope/isotope-min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="js/theme.js"></script>
+    </body>
 </html>
