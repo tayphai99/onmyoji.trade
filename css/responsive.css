@@ -88,8 +88,8 @@
         margin-left: 0px;
     }
 	.header_area .navbar-collapse{
-		max-height: 340px;
-		overflow-y: scroll;
+		max-height: 500px;
+	
 	}
 	.header_area .navbar .nav .nav-item.submenu ul .nav-item .nav-link {
 		padding: 0px 15px;
@@ -178,7 +178,7 @@
 	/* End Home Banner Area css
 	============================================================================================ */
 	.p_120 {
-		padding-top: 70px;
+		padding-top: 120px;
 		padding-bottom: 70px;
 	}
 	.isotope_fillter .gallery_filter li a {
