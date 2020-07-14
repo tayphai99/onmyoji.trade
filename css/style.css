@@ -393,7 +393,7 @@ button:focus {
 }
 
 .banner_area .banner_inner .overlay {
-  background: url(../img/banner/banner.jpg) no-repeat scroll center center;
+  background: url(../img/icon/banner-service.jpg) no-repeat scroll center center;
   position: absolute;
   left: 0;
   right: 0;
