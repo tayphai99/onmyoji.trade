@@ -3943,7 +3943,10 @@ tbody.collapse.show {
 }
 
 .navbar-light .navbar-brand {
-  color: rgba(0, 0, 0, 0.9);
+color: #fff;
+    width: 100%;
+    text-align: center;
+    margin: 30px;
 }
 
 .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {

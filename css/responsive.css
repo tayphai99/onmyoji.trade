@@ -178,15 +178,15 @@
 	/* End Home Banner Area css
 	============================================================================================ */
 	.p_120 {
-		padding-top: 120px;
-		padding-bottom: 70px;
+		padding-top: 20px;
+		padding-bottom: 50px;
 	}
 	.isotope_fillter .gallery_filter li a {
 		padding: 0px 0px;
 		display: block;
 	}
 	.isotope_fillter .gallery_filter li{
-		width: calc(100% / 7);
+		width: calc(100% / 5);
 	}
 	.h_gallery_item {
 		max-width: 383px;

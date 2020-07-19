@@ -44,6 +44,9 @@ Table of Content:
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700");
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
+
+
+
 .list {
   list-style: none;
   margin: 0px;
@@ -94,8 +97,8 @@ button:focus {
 }
 
 .p_120 {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .mt-25 {
@@ -156,7 +159,7 @@ button:focus {
   padding: 0px;
   border: 0px;
   border-radius: 0px;
-  background: #333;
+
 }
 
 .header_area .navbar .nav .nav-item {
