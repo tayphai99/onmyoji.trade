@@ -599,8 +599,8 @@ button:focus {
 
 .h_gallery_item .hover h4 {
   color: #fff;
-  font-size: 16px;
-  font-weight: 600;
+font-size: 14px;
+    font-weight: 500;
   font-family: "Poppins", sans-serif;
 }
 
