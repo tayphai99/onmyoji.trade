@@ -501,7 +501,7 @@ button:focus {
 /* Home Galllery Area css
 ============================================================================================ */
 .home_gallery_area {
-  background: #f9f9ff;
+  background: #938982;
 }
 
 .home_gallery_area .button_more {
@@ -510,11 +510,13 @@ button:focus {
 }
 
 .isotope_fillter {
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  margin-top: 20px;
-  margin-bottom: 80px;
-  padding: 10px;
+    background: #dddd;
+    border: 1px solid #eeeeee;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #333;
 }
 
 .isotope_fillter .gallery_filter {
@@ -535,7 +537,7 @@ button:focus {
   color: #222222;
   line-height: 48px;
   display: inline-block;
-  padding: 10px 4px;
+
   margin: 0px;
 }
 
@@ -545,9 +547,10 @@ button:focus {
 }
 
 .isotope_fillter .gallery_filter li:hover a, .isotope_fillter .gallery_filter li.active a {
-  background: #fcdc00;
+  background: #ff0000;
   -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
 }
 
 .gallery_f_inner {
@@ -555,9 +558,11 @@ button:focus {
 }
 
 .h_gallery_item {
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 1px 5px 5px #000;
 }
 
 .h_gallery_item:before {

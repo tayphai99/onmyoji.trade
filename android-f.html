@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <style>
+body {background: #938982;}
 .filterDiv {
   float: left;
 
@@ -26,7 +27,7 @@
   border: none;
   outline: none;
 
-  background-color: #ccc;
+  background-color: #ffb33b;
   cursor: pointer;
 }
 
@@ -35,7 +36,7 @@
 }
 
 .btn.active {
-  background-color: #ff0000;
+  background-color: #ddd;
   color: white;
 }
 </style>
@@ -46,14 +47,11 @@
 <div id="myBtnContainer" style="
     float: left;
     width: 150px;
-    background: #ccc;border: 1px solid;
+    background: #ffb33b;border: 1px solid;
     padding: 10px;
 ">
   <button class="btn active" onclick="filterSelection('all')"> <img width="60px" src="img/icon/all.png" /></button>
-  <button class="btn" onclick="filterSelection('lv1')"> <img width="60px" src="img/icon/lv1.png" /></button>
-  <button class="btn" onclick="filterSelection('lv2')"> <img width="60px" src="img/icon/lv2.png" /></button>
-  <button class="btn" onclick="filterSelection('lv15')"> <img width="60px" src="img/icon/lv15.png" /></button>
-  <button class="btn" onclick="filterSelection('')"> <img width="60px" src="img/icon/SP-Tamamo-no-Mae.png" /></button>
+  <button class="btn" onclick="filterSelection('no')"> <img width="60px" src="img/icon/SP-Tamamo-no-Mae.png" /></button>
   <button class="btn" onclick="filterSelection('')"> <img  width="60px" src="img/icon/SP-Shuten-Doji.png" /></button>
   <button class="btn" onclick="filterSelection('')"> <img  width="60px" src="img/icon/SP-Shuten-Doji.png" /></button>
   <button class="btn" onclick="filterSelection('')"> <img  width="60px" src="img/icon/SP-Shuten-Doji.png" /></button>
