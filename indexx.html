@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="img/favicon.png" type="image/png">
+        <title>Onmyoji.trade</title>
+        <!-- Bootstrap CSS -->
+ 
+    </head>
+<style>
+body {
+background: #938982;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+.filterDiv {
+float: left;
+    color: #ffffff;
+    text-align: center;
+    margin: 10px;
+    display: none;
+    max-width: 380px;
+    margin-bottom: 20px;
+    font-family: arial;
+	    box-shadow: 1px 5px 5px #000;
+		border-radius: 5px;
+		background:#222;
+}
+.img-icon {
+    width: 55px;
+}
+.img-box{
+    width: 100%;
+    max-width: 380px;
+border-radius: 5px;
+	}
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+ padding: 0;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+    background-color: #ccff00;
+    color: white;
+    border-radius: 50%;
+}
+
+#myBtnContainer
+{
+background-color: #f1f1f1;
+    padding: 5px 0px;
+    border-radius: 5px;
+	margin:10px;
+    box-shadow: 1px 1px 5px #333
+}
+.text{}
+a {
+color:#fff;text-decoration: none;
+}
+</style>
+<body>
+
+<h1 style="
+margin: 50px 0 0 0;
+    font-size: 2rem;
+    color: #eeeeee;
+    font-family: sans-serif;
+	">Onmyoji.trade </h1> 
+
+
+<h2 style="
+    font-size: 1rem;
+    color: #eeeeee;
+    font-family: sans-serif;
+	">Đang cập nhập acc android từ 1h đến 6h tối 23.7...</h2> 
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"><img class="img-icon" src="img/icon/all.png" /></button>
+							<button class="btn" onclick="filterSelection('Thanh-Cơ-sp')"><img class="img-icon" src="img/icon/SP-Bakkotsu-Kiyohime.png" /></button>
+							<button class="btn" onclick="filterSelection('Nội-sp')"><img class="img-icon" src="img/icon/SP-Tamamo-no-Mae.png" /></button>
+							<button class="btn" onclick="filterSelection('Tửu-sp')"><img class="img-icon" src="img/icon/SP-Shuten-Doji.png" /></button>	
+							<button class="btn" onclick="filterSelection('Tỳ-sp')"><img class="img-icon" src="img/icon/SP-Ibaraki-Doji.png" /></button>
+							<button class="btn" onclick="filterSelection('Thiết-sp')"><img class="img-icon" src="img/icon/SP-Onikiri.png" /></button>
+							<button class="btn" onclick="filterSelection('Cẩu-sp')"><img class="img-icon" src="img/icon/SP-Ootengu.png" /></button>
+							<button class="btn" onclick="filterSelection('Nhã-sp')"><img class="img-icon" src="img/icon/SP-Oura-Hannya.png" /></button>
+							<button class="btn" onclick="filterSelection('Ngư-sp')"><img class="img-icon" src="img/icon/SP-Reikai-Kingyo-Hime.png" /></button>
+							<button class="btn" onclick="filterSelection('Lúa-sp')"><img class="img-icon" src="img/icon/SP-Miketsu.png" /></button>
+							<button class="btn" onclick="filterSelection('Hằng-sp')"><img class="img-icon" src="img/icon/SP-Aoandon.png" /></button>
+							<button class="btn" onclick="filterSelection('Đao-sp')"><img class="img-icon" src="img/icon/SP-Yoto-Hime.png" /></button>
+							<button class="btn" onclick="filterSelection('Liên-sp')"><img class="img-icon" src="img/icon/SP-Ichimoku-Ren.png" /></button>
+							<button class="btn" onclick="filterSelection('Hoang-Xuyên-sp')"><img class="img-icon" src="img/icon/SP-Arakawa-no-Aruji.png" /></button>
+						<button class="btn" onclick="filterSelection('Linh-Lộc-ssr')"><img class="img-icon" src="img/icon/Suzuka-Gozen.png" /></button>
+						<button class="btn" onclick="filterSelection('Nội-ssr')"><img class="img-icon" src="img/icon/Tamamo-no-Mae.png" /></button>		
+						<button class="btn" onclick="filterSelection('Tửu-ssr')"><img class="img-icon" src="img/icon/Shuten-Doji.png" /></button>					
+						<button class="btn" onclick="filterSelection('Tỳ-ssr')"><img class="img-icon" src="img/icon/Ibaraki-Doji.png" /></button>
+						<button class="btn" onclick="filterSelection('lang-ssr')"><img class="img-icon" src="img/icon/Takiyasha-Hime.png" /></button>			
+						<button class="btn" onclick="filterSelection('Duyên-ssr')"><img class="img-icon" src="img/icon/Enmusubi-no-Kami.png" /></button>
+						<button class="btn" onclick="filterSelection('Bth-ssr')"><img class="img-icon" src="img/icon/Shiranui.png" /></button>
+						<button class="btn" onclick="filterSelection('Tám-ssr')"><img class="img-icon" src="img/icon/Yamata-no-Orochi.png" /></button>				
+						<button class="btn" onclick="filterSelection('Thiết-ssr')"><img class="img-icon" src="img/icon/Onikiri.png" /></button>
+						<button class="btn" onclick="filterSelection('Đnh-ssr')"><img class="img-icon" src="img/icon/Ootakemaru.png" /></button>
+						<button class="btn" onclick="filterSelection('Kính-ssr')"><img class="img-icon" src="img/icon/Ungaikyou.png" /></button>			
+						<button class="btn" onclick="filterSelection('Kido-ssr')"><img class="img-icon" src="img/icon/Kidoumaru.png" /></button>
+						<button class="btn" onclick="filterSelection('Cẩu-ssr')"><img class="img-icon" src="img/icon/Ootengu.png" /></button>
+						<button class="btn" onclick="filterSelection('Kohaku-ssr')"><img class="img-icon" src="img/icon/Hakuzosu.png" /></button>			
+						<button class="btn" onclick="filterSelection('Điểu-ssr')"><img class="img-icon" src="img/icon/Kacho-Fugetsu.png" /></button>
+						<button class="btn" onclick="filterSelection('Tre-ssr')"><img class="img-icon" src="img/icon/Kaguya-Hime.png" /></button>
+						<button class="btn" onclick="filterSelection('Diện-ssr')"><img class="img-icon" src="img/icon/Menreiki.png" /></button>
+						<button class="btn" onclick="filterSelection('Lúa-ssr')"><img class="img-icon" src="img/icon/Miketsu.png" /></button>
+						<button class="btn" onclick="filterSelection('Hằng-ssr')"><img class="img-icon" src="img/icon/Aoandon.png" /></button>
+						<button class="btn" onclick="filterSelection('Hoang-ssr')"><img class="img-icon" src="img/icon/Susabi.png" /></button>
+						<button class="btn" onclick="filterSelection('Bỉ-ssr')"><img class="img-icon" src="img/icon/Higanbana.png" /></button>
+						<button class="btn" onclick="filterSelection('Tuyết-ssr')"><img class="img-icon" src="img/icon/Yuki-Doji.png" /></button>
+						<button class="btn" onclick="filterSelection('Sơn-Phong-ssr')"><img class="img-icon" src="img/icon/Yamakaze.png" /></button>
+						<button class="btn" onclick="filterSelection('Đao-ssr')"><img class="img-icon" src="img/icon/Yoto-Hime.png" /></button>
+						<button class="btn" onclick="filterSelection('Liên-ssr')"><img class="img-icon" src="img/icon/Ichimoku-Ren.png" /></button>
+						<button class="btn" onclick="filterSelection('Hoang-Xuyên-ssr')"><img class="img-icon" src="img/icon/Arakawa-no-Aruji.png" /></button>
+						<button class="btn" onclick="filterSelection('Diêm-ssr')"><img class="img-icon" src="img/icon/Enma.png" /></button>
+						<button class="btn" onclick="filterSelection('Lộc-ssr')"><img class="img-icon" src="img/icon/Shishio.png" /></button>
+</div>
+
+<div class="container">
+<!--
+
+  <div class="filterDiv "><a href="img-adr/.png" target="_bank">
+  <img class="img-box" src="img-adr/.png" alt=""><span class="text">android / guest / lv15 / id: </span></a></div>
+  
+-->
+
+
+  <div class="filterDiv L12 29.6 7d lv15 Cẩu-sp Kido-ssr Kính-ssr Điểu-ssr Tỳ-ssr"><a href="img-adr/L12 29.6 7d lv15 Cẩu-sp Kido-ssr Kính-ssr Điểu-ssr Tỳ-ssr.png" target="_bank">
+  <img class="img-box" src="img-adr/L12 29.6 7d lv15 Cẩu-sp Kido-ssr Kính-ssr Điểu-ssr Tỳ-ssr.png" alt=""><span class="text">android / guest / lv15 / id: L12</span></a></div>
+
+
+  <div class="filterDiv L1 21.7 1d lv15 Hằng-ssr"><a href="img-adr/L1 21.7 1d lv15 Hằng-ssr.png" target="_bank">
+  <img class="img-box" src="img-adr/L1 21.7 1d lv15 Hằng-ssr.png" alt=""><span class="text">android / guest / lv15 / id: L1</span></a></div>
+  
+  <div class="filterDiv L2 6.7 5.5d lv15 Liên-sp Linh-Lộc-ssr Lúa-ssr Liên-ssr"><a href="img-adr/L2 6.7 5.5d lv15 Liên-sp Linh-Lộc-ssr Lúa-ssr Liên-ssr.png" target="_bank">
+  <img class="img-box" src="img-adr/L2 6.7 5.5d lv15 Liên-sp Linh-Lộc-ssr Lúa-ssr Liên-ssr.png" alt=""><span class="text">android / guest / lv15 / id: L2</span></a></div>
+  
+  <div class="filterDiv L3 21.7 7.5d lv15 Thanh-Cơ-sp Bth-ssr Hằng-ssr"><a href="img-adr/L3 21.7 7.5d lv15 Thanh-Cơ-sp Bth-ssr Hằng-ssr.png" target="_bank">
+  <img class="img-box" src="img-adr/L3 21.7 7.5d lv15 Thanh-Cơ-sp Bth-ssr Hằng-ssr.png" alt=""><span class="text">android / guest / lv15 / id: L3</span></a></div>
+  
+  <div class="filterDiv L4 7.7 3d lv15 Nội-ssr Tỳ-ssr"><a href="img-adr/L4 7.7 3d lv15 Nội-ssr Tỳ-ssr.png" target="_bank">
+  <img class="img-box" src="img-adr/L4 7.7 3d lv15 Nội-ssr Tỳ-ssr.png" alt=""><span class="text">android / guest / lv15 / id: L4</span></a></div>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+ 
+
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
