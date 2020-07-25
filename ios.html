@@ -1,121 +1,261 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
     <head>
-        <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="icon" href="img/favicon.png" type="image/png">
         <title>Onmyoji.trade</title>
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="vendors/linericon/style.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
-        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-        <link rel="stylesheet" href="vendors/animate-css/animate.css">
-        <!-- main css -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsive.css">
     </head>
-    <body style="background: #938982;">
+<style>
+body {
+background: #938982;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+.filterDiv {
+float: left;
+    color: #ffffff;
+    text-align: center;
+    margin: 10px;
+    display: none;
+    max-width: 380px;
+    margin-bottom: 20px;
+    font-family: arial;
+	    box-shadow: 1px 5px 5px #000;
+		border-radius: 5px;
+		background:#222;
+}
+.img-icon {
+    width: 55px;
+}
+.img-box{
+    width: 100%;
+    max-width: 380px;
+border-radius: 5px;
+	}
+.show {
+  display: block;
+}
 
-        <!--================Home Gallery Area =================-->
-        <section class="home_gallery_area p_120"> <h2 style="text-align: center;padding: 20px;margin-bottom: 20px;"><a style="color: #fff;" href="https://onmyoji.trade/">Onmyoji trade</a> <span style="color: #eee;">/ ios</span></h2>
-        	<div class="container">
-        		<div class="isotope_fillter">
-        			<ul class="gallery_filter list">
-						<li class="active" data-filter="*"><a href="#"><img width="60px" src="img/icon/all.png" /></a></li>
-							<li data-filter=".SP-Tamamo-no-Mae"><a href="#"><img width="60px" src="img/icon/SP-Tamamo-no-Mae.png" /></a></li>
-							<li data-filter=".SP-Shuten-Doji"><a href="#"><img width="60px" src="img/icon/SP-Shuten-Doji.png" /></a></li>	
-							<li data-filter=".SP-Ibaraki-Doji"><a href="#"><img width="60px" src="img/icon/SP-Ibaraki-Doji.png" /></a></li>
-							<li data-filter=".SP-Onikiri"><a href="#"><img width="60px" src="img/icon/SP-Onikiri.png" /></a></li>
-							<li data-filter=".SP-Ootengu"><a href="#"><img width="60px" src="img/icon/SP-Ootengu.png" /></a></li>
-							<li data-filter=".SP-Oura-Hannya"><a href="#"><img width="60px" src="img/icon/SP-Oura-Hannya.png" /></a></li>
-							<li data-filter=".SP-Reikai-Kingyo-Hime"><a href="#"><img width="60px" src="img/icon/SP-Reikai-Kingyo-Hime.png" /></a></li>
-							<li data-filter=".SP-Miketsu"><a href="#"><img width="60px" src="img/icon/SP-Miketsu.png" /></a></li>
-							<li data-filter=".SP-Aoandon"><a href="#"><img width="60px" src="img/icon/SP-Aoandon.png" /></a></li>
-							<li data-filter=".SP-Yoto-Hime"><a href="#"><img width="60px" src="img/icon/SP-Yoto-Hime.png" /></a></li>
-							<li data-filter=".SP-Ichimoku-Ren"><a href="#"><img width="60px" src="img/icon/SP-Ichimoku-Ren.png" /></a></li>
-							<li data-filter=".SP-Arakawa-no-Aruji"><a href="#"><img width="60px" src="img/icon/SP-Arakawa-no-Aruji.png" /></a></li>
-						<li data-filter=".Suzuka-Gozen"><a href="#"><img width="60px" src="img/icon/Suzuka-Gozen.png" /></a></li>
-						<li data-filter=".Tamamo-no-Mae"><a href="#"><img width="60px" src="img/icon/Tamamo-no-Mae.png" /></a></li>		
-						<li data-filter=".Shuten-Doji"><a href="#"><img width="60px" src="img/icon/Shuten-Doji.png" /></a></li>					
-						<li data-filter=".Ibaraki-Doji"><a href="#"><img width="60px" src="img/icon/Ibaraki-Doji.png" /></a></li>
-						<li data-filter=".Takiyasha-Hime"><a href="#"><img width="60px" src="img/icon/Takiyasha-Hime.png" /></a></li>			
-						<li data-filter=".Enmusubi-no-Kami"><a href="#"><img width="60px" src="img/icon/Enmusubi-no-Kami.png" /></a></li>
-						<li data-filter=".Shiranui"><a href="#"><img width="60px" src="img/icon/Shiranui.png" /></a></li>
-						<li data-filter=".Yamata-no-Orochi"><a href="#"><img width="60px" src="img/icon/Yamata-no-Orochi.png" /></a></li>				
-						<li data-filter=".Onikiri"><a href="#"><img width="60px" src="img/icon/Onikiri.png" /></a></li>
-						<li data-filter=".Ootakemaru"><a href="#"><img width="60px" src="img/icon/Ootakemaru.png" /></a></li>
-						<li data-filter=".Ungaikyou"><a href="#"><img width="60px" src="img/icon/Ungaikyou.png" /></a></li>			
-						<li data-filter=".Kidoumaru"><a href="#"><img width="60px" src="img/icon/Kidoumaru.png" /></a></li>
-						<li data-filter=".Ootengu"><a href="#"><img width="60px" src="img/icon/Ootengu.png" /></a></li>
-						<li data-filter=".Hakuzosu"><a href="#"><img width="60px" src="img/icon/Hakuzosu.png" /></a></li>			
-						<li data-filter=".Kacho-Fugetsu"><a href="#"><img width="60px" src="img/icon/Kacho-Fugetsu.png" /></a></li>
-						<li data-filter=".Kaguya-Hime"><a href="#"><img width="60px" src="img/icon/Kaguya-Hime.png" /></a></li>
-						<li data-filter=".Menreiki"><a href="#"><img width="60px" src="img/icon/Menreiki.png" /></a></li>
-						<li data-filter=".Miketsu"><a href="#"><img width="60px" src="img/icon/Miketsu.png" /></a></li>
-						<li data-filter=".Aoandon"><a href="#"><img width="60px" src="img/icon/Aoandon.png" /></a></li>
-						<li data-filter=".Susabi"><a href="#"><img width="60px" src="img/icon/Susabi.png" /></a></li>
-						<li data-filter=".Higanbana"><a href="#"><img width="60px" src="img/icon/Higanbana.png" /></a></li>
-						<li data-filter=".Yuki-Doji"><a href="#"><img width="60px" src="img/icon/Yuki-Doji.png" /></a></li>
-						<li data-filter=".Yamakaze"><a href="#"><img width="60px" src="img/icon/Yamakaze.png" /></a></li>
-						<li data-filter=".Yoto-Hime"><a href="#"><img width="60px" src="img/icon/Yoto-Hime.png" /></a></li>
-						<li data-filter=".Ichimoku-Ren"><a href="#"><img width="60px" src="img/icon/Ichimoku-Ren.png" /></a></li>
-						<li data-filter=".Arakawa-no-Aruji"><a href="#"><img width="60px" src="img/icon/Arakawa-no-Aruji.png" /></a></li>
-						<li data-filter=".Enma"><a href="#"><img width="60px" src="img/icon/Enma.png" /></a></li>
-						<li data-filter=".Shishio"><a href="#"><img width="60px" src="img/icon/Shishio.png" /></a></li>
-				
-					
-					</ul>
-        		</div>
-        	</div>
-        	<div class="container box_1620">
-        		<div class="gallery_f_inner row imageGallery1">
-				 <!--========
-				 
-<div class="col-lg-3 col-md-4 col-sm-6 "><div class="h_gallery_item"><img src="img/onmyoji-ios/.jpg" alt=""><div class="hover"><a class="light" href="img/onmyoji-ios/.jpg"><h4>text</h4> <i class="fa fa-expand"></i> zoom in <i class="fa fa-expand"></i></a></div></div></div>
-					
-					====-->		
- <!--				 
-<div class="col-lg-3 col-md-4 col-sm-6 Takiyasha-Hime Shiranui"><div class="h_gallery_item"><img src="img/onmyoji-ios/$4,5 lv15 ios steam id B1 Takiyasha-Hime Shiranui.jpg" alt=""><div class="hover"><a class="light" href="img/onmyoji-ios/$4,5 lv15 ios steam id B1 Takiyasha-Hime Shiranui.jpg"><h4>lv15 / ios / steam / id: B1 </h4> <i class="fa fa-expand"></i></a></div></div></div>
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
 
-<div class="col-lg-3 col-md-4 col-sm-6 Ibaraki-Doji SP-Onikiri"><div class="h_gallery_item"><img src="img/onmyoji-ios/$2,5 lv15 ios steam id B2 Ibaraki-Doji SP-Onikiri.jpg" alt=""><div class="hover"><a class="light" href="img/onmyoji-ios/$2,5 lv15 ios steam id B2 Ibaraki-Doji SP-Onikiri.jpg"><h4>lv15 / ios / steam / id: B2</h4> <i class="fa fa-expand"></i></a></div></div></div>
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+ padding: 0;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+    background-color: #ccff00;
+    color: white;
+    border-radius: 50%;
+}
+
+#myBtnContainer
+{
+background-color: #f1f1f1;
+    padding: 5px 0px;
+    border-radius: 5px;
+	margin:10px;
+    box-shadow: 1px 1px 5px #333
+}
+.text{}
+a {
+color:#fff;text-decoration: none;
+}
+</style>
+<body>
+
+<h1 style="margin: 50px 0 50px 0;font-size: 2rem;color: #eeeeee;font-family: sans-serif;"><a style="color: #fff;" href="https://onmyoji.trade/">Onmyoji.trade</a></h1> 
+<!--<h2 style="font-size: 1rem;color: #eeeeee;font-family: sans-serif;">Thông báo</h2> -->
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"><img class="img-icon" src="img/icon/all.png" /></button>
+							<button class="btn" onclick="filterSelection('Thanh-Cơ-sp')"><img class="img-icon" src="img/icon/SP-Bakkotsu-Kiyohime.png" /></button>
+							<button class="btn" onclick="filterSelection('Nội-sp')"><img class="img-icon" src="img/icon/SP-Tamamo-no-Mae.png" /></button>
+							<button class="btn" onclick="filterSelection('Tửu-sp')"><img class="img-icon" src="img/icon/SP-Shuten-Doji.png" /></button>	
+							<button class="btn" onclick="filterSelection('Tỳ-sp')"><img class="img-icon" src="img/icon/SP-Ibaraki-Doji.png" /></button>
+							<button class="btn" onclick="filterSelection('Thiết-sp')"><img class="img-icon" src="img/icon/SP-Onikiri.png" /></button>
+							<button class="btn" onclick="filterSelection('Cẩu-sp')"><img class="img-icon" src="img/icon/SP-Ootengu.png" /></button>
+							<button class="btn" onclick="filterSelection('Nhã-sp')"><img class="img-icon" src="img/icon/SP-Oura-Hannya.png" /></button>
+							<button class="btn" onclick="filterSelection('Ngư-sp')"><img class="img-icon" src="img/icon/SP-Reikai-Kingyo-Hime.png" /></button>
+							<button class="btn" onclick="filterSelection('Lúa-sp')"><img class="img-icon" src="img/icon/SP-Miketsu.png" /></button>
+							<button class="btn" onclick="filterSelection('Hằng-sp')"><img class="img-icon" src="img/icon/SP-Aoandon.png" /></button>
+							<button class="btn" onclick="filterSelection('Đao-sp')"><img class="img-icon" src="img/icon/SP-Yoto-Hime.png" /></button>
+							<button class="btn" onclick="filterSelection('Liên-sp')"><img class="img-icon" src="img/icon/SP-Ichimoku-Ren.png" /></button>
+							<button class="btn" onclick="filterSelection('Hoang-Xuyên-sp')"><img class="img-icon" src="img/icon/SP-Arakawa-no-Aruji.png" /></button>
+						<button class="btn" onclick="filterSelection('Linh-Lộc-ssr')"><img class="img-icon" src="img/icon/Suzuka-Gozen.png" /></button>
+						<button class="btn" onclick="filterSelection('Nội-ssr')"><img class="img-icon" src="img/icon/Tamamo-no-Mae.png" /></button>		
+						<button class="btn" onclick="filterSelection('Tửu-ssr')"><img class="img-icon" src="img/icon/Shuten-Doji.png" /></button>					
+						<button class="btn" onclick="filterSelection('Tỳ-ssr')"><img class="img-icon" src="img/icon/Ibaraki-Doji.png" /></button>
+						<button class="btn" onclick="filterSelection('Lang-ssr')"><img class="img-icon" src="img/icon/Takiyasha-Hime.png" /></button>			
+						<button class="btn" onclick="filterSelection('Duyên-ssr')"><img class="img-icon" src="img/icon/Enmusubi-no-Kami.png" /></button>
+						<button class="btn" onclick="filterSelection('Bth-ssr')"><img class="img-icon" src="img/icon/Shiranui.png" /></button>
+						<button class="btn" onclick="filterSelection('Tám-ssr')"><img class="img-icon" src="img/icon/Yamata-no-Orochi.png" /></button>				
+						<button class="btn" onclick="filterSelection('Thiết-ssr')"><img class="img-icon" src="img/icon/Onikiri.png" /></button>
+						<button class="btn" onclick="filterSelection('Đnh-ssr')"><img class="img-icon" src="img/icon/Ootakemaru.png" /></button>
+						<button class="btn" onclick="filterSelection('Kính-ssr')"><img class="img-icon" src="img/icon/Ungaikyou.png" /></button>			
+						<button class="btn" onclick="filterSelection('Kido-ssr')"><img class="img-icon" src="img/icon/Kidoumaru.png" /></button>
+						<button class="btn" onclick="filterSelection('Cẩu-ssr')"><img class="img-icon" src="img/icon/Ootengu.png" /></button>
+						<button class="btn" onclick="filterSelection('Kohaku-ssr')"><img class="img-icon" src="img/icon/Hakuzosu.png" /></button>			
+						<button class="btn" onclick="filterSelection('Điểu-ssr')"><img class="img-icon" src="img/icon/Kacho-Fugetsu.png" /></button>
+						<button class="btn" onclick="filterSelection('Tre-ssr')"><img class="img-icon" src="img/icon/Kaguya-Hime.png" /></button>
+						<button class="btn" onclick="filterSelection('Diện-ssr')"><img class="img-icon" src="img/icon/Menreiki.png" /></button>
+						<button class="btn" onclick="filterSelection('Lúa-ssr')"><img class="img-icon" src="img/icon/Miketsu.png" /></button>
+						<button class="btn" onclick="filterSelection('Hằng-ssr')"><img class="img-icon" src="img/icon/Aoandon.png" /></button>
+						<button class="btn" onclick="filterSelection('Hoang-ssr')"><img class="img-icon" src="img/icon/Susabi.png" /></button>
+						<button class="btn" onclick="filterSelection('Bỉ-ssr')"><img class="img-icon" src="img/icon/Higanbana.png" /></button>
+						<button class="btn" onclick="filterSelection('Tuyết-ssr')"><img class="img-icon" src="img/icon/Yuki-Doji.png" /></button>
+						<button class="btn" onclick="filterSelection('Sơn-Phong-ssr')"><img class="img-icon" src="img/icon/Yamakaze.png" /></button>
+						<button class="btn" onclick="filterSelection('Đao-ssr')"><img class="img-icon" src="img/icon/Yoto-Hime.png" /></button>
+						<button class="btn" onclick="filterSelection('Liên-ssr')"><img class="img-icon" src="img/icon/Ichimoku-Ren.png" /></button>
+						<button class="btn" onclick="filterSelection('Hoang-Xuyên-ssr')"><img class="img-icon" src="img/icon/Arakawa-no-Aruji.png" /></button>
+						<button class="btn" onclick="filterSelection('Diêm-ssr')"><img class="img-icon" src="img/icon/Enma.png" /></button>
+						<button class="btn" onclick="filterSelection('Lộc-ssr')"><img class="img-icon" src="img/icon/Shishio.png" /></button>
+</div>
+
+<div class="container">
+<!--
+
+  <div class="filterDiv "><a href="img-ios/.jpg" target="_bank">
+  <img class="img-box" src="img-ios/.jpg" alt=""><span class="text">ios / steam / lv15 / id: </span></a></div>
+  
 -->
-        		</div>
-        	</div>
-        </section>
-        <!--================End Home Gallery Area =================-->
 
+  <div class="filterDiv P1 5d lv15 Nội-ssr Cẩu-ssr"><a href="img-ios/P1 5d lv15 Nội-ssr Cẩu-ssr.jpg" target="_bank">
+  <img class="img-box" src="img-ios/P1 5d lv15 Nội-ssr Cẩu-ssr.jpg" alt=""><span class="text">ios / steam / lv15 / id: P1</span></a></div>
+  
+  <div class="filterDiv P2 7d lv15 Liên-sp Lang-ssr Bth-ssr"><a href="img-ios/P2 7d lv15 Liên-sp Lang-ssr Bth-ssr.jpg" target="_bank">
+  <img class="img-box" src="img-ios/P2 7d lv15 Liên-sp Lang-ssr Bth-ssr.jpg" alt=""><span class="text">ios / steam / lv15 / id: P2</span></a></div>
+  
+  <div class="filterDiv P3 5d lv15 Hằng-sp Sơn-Phong-ssr Cẩu-ssr  Cẩu-ssr"><a href="img-ios/P3 5d lv15 Hằng-sp Sơn-Phong-ssr Cẩu-ssr  Cẩu-ssr.jpg" target="_bank">
+  <img class="img-box" src="img-ios/P3 5d lv15 Hằng-sp Sơn-Phong-ssr Cẩu-ssr  Cẩu-ssr.jpg" alt=""><span class="text">ios / steam / lv15 / id: P3</span></a></div>
+  
+  <div class="filterDiv P4 7d lv15 Thiết-sp Hoang-Xuyên-sp Tỳ-ssr Kohaku-ssr"><a href="img-ios/P4 7d lv15 Thiết-sp Hoang-Xuyên-sp Tỳ-ssr Kohaku-ssr.jpg" target="_bank">
+  <img class="img-box" src="img-ios/P4 7d lv15 Thiết-sp Hoang-Xuyên-sp Tỳ-ssr Kohaku-ssr.jpg" alt=""><span class="text">ios / steam / lv15 / id: P4</span></a></div>
+  
+  <div class="filterDiv P5 2d lv15 Lúa-ssr Tre-ssr Đao-ssr"><a href="img-ios/P5 2d lv15 Lúa-ssr Tre-ssr Đao-ssr.jpg" target="_bank">
+  <img class="img-box" src="img-ios/P5 2d lv15 Lúa-ssr Tre-ssr Đao-ssr.jpg" alt=""><span class="text">ios / steam / lv15 / id: P5</span></a></div>
+  
+  <div class="filterDiv P6 6d lv15 Tửu-ssr Tám-ssr Hằng-ssr"><a href="img-ios/P6 6d lv15 Tửu-ssr Tám-ssr Hằng-ssr.jpg" target="_bank">
+  <img class="img-box" src="img-ios/P6 6d lv15 Tửu-ssr Tám-ssr Hằng-ssr.jpg" alt=""><span class="text">ios / steam / lv15 / id: P6</span></a></div>
+  
+  <div class="filterDiv P7 2d lv15 Thiết-ssr Diêm-ssr"><a href="img-ios/P7 2d lv15 Thiết-ssr Diêm-ssr.jpg" target="_bank">
+  <img class="img-box" src="img-ios/P7 2d lv15 Thiết-ssr Diêm-ssr.jpg" alt=""><span class="text">ios / steam / lv15 / id: P7</span></a></div>
+  
+  <div class="filterDiv P8 11d lv15 Đao-sp Liên-sp Duyên-ssr Duyên-ssr Kính-ssr"><a href="img-ios/P8 11d lv15 Đao-sp Liên-sp Duyên-ssr Duyên-ssr Kính-ssr.jpg" target="_bank">
+  <img class="img-box" src="img-ios/P8 11d lv15 Đao-sp Liên-sp Duyên-ssr Duyên-ssr Kính-ssr.jpg" alt=""><span class="text">ios / steam / lv15 / id: P8</span></a></div>
+  
+  <div class="filterDiv P9 3.5d lv15 Kido-ssr Thiết-ssr Diêm-ssr"><a href="img-ios/P9 3.5d lv15 Kido-ssr Thiết-ssr Diêm-ssr.jpg" target="_bank">
+  <img class="img-box" src="img-ios/P9 3.5d lv15 Kido-ssr Thiết-ssr Diêm-ssr.jpg" alt=""><span class="text">ios / steam / lv15 / id: P9</span></a></div>
+  
+  <div class="filterDiv P10 2d lv15 Lang-ssr"><a href="img-ios/P10 2d lv15 Lang-ssr.jpg" target="_bank">
+  <img class="img-box" src="img-ios/P10 2d lv15 Lang-ssr.jpg" alt=""><span class="text">ios / steam / lv15 / id: P10</span></a></div>
+  
+  <div class="filterDiv P11 1.5d lv15 Tuyết-ssr Đao-ssr"><a href="img-ios/P11 1.5d lv15 Tuyết-ssr Đao-ssr.jpg" target="_bank">
+  <img class="img-box" src="img-ios/P11 1.5d lv15 Tuyết-ssr Đao-ssr.jpg" alt=""><span class="text">ios / steam / lv15 / id: P11</span></a></div>
+  
+  <div class="filterDiv P12 2d lv15 Đao-ssr Tỳ-ssr"><a href="img-ios/P12 2d lv15 Đao-ssr Tỳ-ssr.jpg" target="_bank">
+  <img class="img-box" src="img-ios/P12 2d lv15 Đao-ssr Tỳ-ssr.jpg" alt=""><span class="text">ios / steam / lv15 / id: P12</span></a></div>
+  
+  <div class="filterDiv P13 2d lv15 Kính-ssr"><a href="img-ios/P13 2d lv15 Kính-ssr.jpg" target="_bank">
+  <img class="img-box" src="img-ios/P13 2d lv15 Kính-ssr.jpg" alt=""><span class="text">ios / steam / lv15 / id: P13</span></a></div>
+  
+  <div class="filterDiv P14 2d lv15 Duyên-ssr Kohaku-ssr"><a href="img-ios/P14 2d lv15 Duyên-ssr Kohaku-ssr.jpg" target="_bank">
+  <img class="img-box" src="img-ios/P14 2d lv15 Duyên-ssr Kohaku-ssr.jpg" alt=""><span class="text">ios / steam / lv15 / id: P14</span></a></div>
+  
+  <div class="filterDiv P15 2d lv15 Sơn-Phong-ssr Hằng-ssr Diêm-ssr"><a href="img-ios/P15 2d lv15 Sơn-Phong-ssr Hằng-ssr Diêm-ssr.jpg" target="_bank">
+  <img class="img-box" src="img-ios/P15 2d lv15 Sơn-Phong-ssr Hằng-ssr Diêm-ssr.jpg" alt=""><span class="text">ios / steam / lv15 / id: P15</span></a></div>
+  
+  <div class="filterDiv P16 3.5 lv15 Lúa-ssr Tỳ-ssr Cẩu-ssr"><a href="img-ios/P16 3.5 lv15 Lúa-ssr Tỳ-ssr Cẩu-ssr.jpg" target="_bank">
+  <img class="img-box" src="img-ios/P16 3.5 lv15 Lúa-ssr Tỳ-ssr Cẩu-ssr.jpg" alt=""><span class="text">ios / steam / lv15 / id: P16</span></a></div>
+  
+  <div class="filterDiv P17 4d lv15 Bth-ssr Đao-ssr Đao-ssr Tỳ-ssr"><a href="img-ios/P17 4d lv15 Bth-ssr Đao-ssr Đao-ssr Tỳ-ssr.jpg" target="_bank">
+  <img class="img-box" src="img-ios/P17 4d lv15 Bth-ssr Đao-ssr Đao-ssr Tỳ-ssr.jpg" alt=""><span class="text">ios / steam / lv15 / id: P17</span></a></div>
+  
+  <div class="filterDiv P18 3.5d lv15 Đao-sp Hoang-ssr Đao-ssr"><a href="img-ios/P18 3.5d lv15 Đao-sp Hoang-ssr Đao-ssr.jpg" target="_bank">
+  <img class="img-box" src="img-ios/P18 3.5d lv15 Đao-sp Hoang-ssr Đao-ssr.jpg" alt=""><span class="text">ios / steam / lv15 / id: P18</span></a></div>
+  
+  <div class="filterDiv P19 2d lv15 Lúa-ssr Tuyết-ssr Đao-ssr"><a href="img-ios/P19 2d lv15 Lúa-ssr Tuyết-ssr Đao-ssr.jpg" target="_bank">
+  <img class="img-box" src="img-ios/P19 2d lv15 Lúa-ssr Tuyết-ssr Đao-ssr.jpg" alt=""><span class="text">ios / steam / lv15 / id: P19</span></a></div>
+  
+  <div class="filterDiv P20 8d lv15 Linh-Lộc-ssr Kính-ssr Bỉ-ssr"><a href="img-ios/P20 8d lv15 Linh-Lộc-ssr Kính-ssr Bỉ-ssr.jpg" target="_bank">
+  <img class="img-box" src="img-ios/P20 8d lv15 Linh-Lộc-ssr Kính-ssr Bỉ-ssr.jpg" alt=""><span class="text">ios / steam / lv15 / id: P20</span></a></div>
+  
+  <div class="filterDiv P21 3.5d lv15 Kido-ssr Tuyết-ssr Lộc-ssr"><a href="img-ios/P21 3.5d lv15 Kido-ssr Tuyết-ssr Lộc-ssr.jpg" target="_bank">
+  <img class="img-box" src="img-ios/P21 3.5d lv15 Kido-ssr Tuyết-ssr Lộc-ssr.jpg" alt=""><span class="text">ios / steam / lv15 / id: P21</span></a></div>
+  
+  <div class="filterDiv P22 2d lv15 Lúa-sp Bỉ-ssr"><a href="img-ios/P22 2d lv15 Lúa-sp Bỉ-ssr.jpg" target="_bank">
+  <img class="img-box" src="img-ios/P22 2d lv15 Lúa-sp Bỉ-ssr.jpg" alt=""><span class="text">ios / steam / lv15 / id: P22</span></a></div>
+  
+  <div class="filterDiv P23 4d lv15 Đao-sp Duyên-ssr"><a href="img-ios/P23 4d lv15 Đao-sp Duyên-ssr.jpg" target="_bank">
+  <img class="img-box" src="img-ios/P23 4d lv15 Đao-sp Duyên-ssr.jpg" alt=""><span class="text">ios / steam / lv15 / id: P23</span></a></div>
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5f148cb8a45e787d128bbb56/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
 </script>
-<!--End of Tawk.to Script-->
-        
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/stellar.js"></script>
-        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
-        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-        <script src="vendors/isotope/isotope-min.js"></script>
-        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-        <script src="js/jquery.ajaxchimp.min.js"></script>
-        <script src="js/mail-script.js"></script>
-        <script src="js/theme.js"></script>
-    </body>
+
+</body>
 </html>
