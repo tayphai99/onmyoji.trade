@@ -1,0 +1,59 @@
+
+.box_fixRight {    
+	position: fixed;
+    top: 70%;
+    right: 0px;
+    z-index: 999;
+    background: #fff;
+    border-radius: 6px 0px 0px 6px;
+    padding: 5px 0px 0px 5px;}
+	.box_content img {width: 50px;}
+.box_fixRight .box_content .item { display: block;}
+@media (max-width: 549px){.box_fixRight{  top: 80%;	}}
+
+
+
+body {background: #938982;text-align: center;margin: 0 auto;max-width: 1380px;}
+.filterDiv {float: left;color: #ffffff;text-align: center;margin: 10px;max-width: 210px;margin-bottom: 20px;font-family: arial;box-shadow: 1px 5px 5px #000;border-radius: 5px;background:#222;}
+.filterDiv2 {float: left;color: #ffffff;text-align: center;margin: 10px;max-width: 325px;margin-bottom: 20px;font-family: arial;box-shadow: 1px 5px 5px #000;border-radius: 5px;background:#222;}
+.img-icon {width: 55px;}
+.img-box {width: 100%;border-radius: 5px;margin-bottom: 5px;}
+.img-box2 {width: 100%;border-radius: 5px;margin-bottom: 5px;}
+.show {display: block;}
+.container {margin-top: 20px;overflow: hidden;}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+ padding: 0;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+    background-color: #ccff00;
+    color: white;
+    border-radius: 50%;
+}
+
+#myBtnContainer
+{
+background-color: #f1f1f1;
+    padding: 5px 0px;
+    border-radius: 5px;
+	margin:10px;
+    box-shadow: 1px 1px 5px #333
+}
+.text{}
+a {
+color:#fff;text-decoration: none;
+}
+
+.menu-activex {background: #333;padding: 5px 10px;border-radius: 5px;margin: 10px;}
+.menux {color: #fff;margin: 10px;line-height: 3rem;font-family: sans-serif;font-size: 1.5rem;}
+hr {color:#333;}
