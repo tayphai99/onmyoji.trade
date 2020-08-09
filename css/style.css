@@ -64,3 +64,21 @@ a {color:#fff;text-decoration: none;}
     font-size: 1rem;
     font-weight: bold;
     color: #555; }
+	
+	
+	
+@media (max-width: 549px){
+.menutop1{float:none;}
+.menutop2-1 {display:none;}
+.menutop2 {display:none;}
+.filterDiv-thucthan		{    float: none;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}}
+		
+		
+}
+	
+	
+	
+	
