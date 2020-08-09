@@ -24,7 +24,7 @@ body {font-family: arial;background: #938982;text-align: center;margin: 0 auto;m
 }
 
 .container {
-  margin-top: 20px;
+margin: 0 auto; padding-top: 50px;
   overflow: hidden;
 }
 
@@ -53,7 +53,7 @@ background-color: #f1f1f1;
     padding: 5px 0px;
     border-radius: 5px;
 	margin:10px;
-    box-shadow: 1px 1px 5px #333
+    box-shadow: 1px 1px 5px #333;margin-top:50px;
 }
 
 a {color:#fff;text-decoration: none;}
@@ -71,12 +71,9 @@ a {color:#fff;text-decoration: none;}
 .menutop1{float:none;}
 .menutop2-1 {display:none;}
 .menutop2 {display:none;}
-.filterDiv-thucthan		{    float: none;
-    margin: 0 auto;
-    margin-bottom: 20px;
-}}
-		
-		
+.filterDiv-thucthan	{float: none;margin: 0 auto;margin-bottom: 20px;}
+.container {padding-top: 20px;}		
+.myBtnContainer{margin-top:20px;}		
 }
 	
 	
