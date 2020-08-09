@@ -1,0 +1,66 @@
+
+
+body {font-family: arial;background: #938982;text-align: center;margin: 0 auto;max-width: 1400px;}
+.filterDiv-index {float: left;color: #ffffff;text-align: center;margin: 10px;max-width: 210px;margin-bottom: 20px;box-shadow: 1px 5px 5px #000;border-radius: 5px;background:#222;}
+.filterDiv-thucthan {float: left;color: #ffffff;text-align: center;margin: 10px;max-width: 212px;margin-bottom: 20px;box-shadow: 1px 5px 5px #000;border-radius: 5px;background:#222;}
+.filterDiv-acc {float: left;color: #ffffff;text-align: center;margin: 10px;display: none;max-width: 445px;margin-bottom: 20px;box-shadow: 1px 5px 5px #000;border-radius: 5px;background:#222;}
+.filter-icon {width: 60px;}
+.btnx {padding: 5px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555; }
+
+.filterDiv2 {float: left;color: #ffffff;text-align: center;margin: 10px;max-width: 325px;margin-bottom: 20px;box-shadow: 1px 5px 5px #000;border-radius: 5px;background:#222;}
+.menutop1{float: left;padding: 0 10px;color: #fff;}
+.menutop2{float: right;padding: 20px;color: #fff;font-size: 1.1rem;}
+.menutop2-1{padding-left: 20px;}
+.img-box {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 3px;
+	}
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+ padding: 0;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+    background-color: #ddd;
+ 
+    border-radius: 10%;
+}
+
+#myBtnContainer
+{
+background-color: #f1f1f1;
+    padding: 5px 0px;
+    border-radius: 5px;
+	margin:10px;
+    box-shadow: 1px 1px 5px #333
+}
+
+a {color:#fff;text-decoration: none;}
+
+.menu-activex {background: #333;padding: 5px 10px;border-radius: 5px;margin: 10px;}
+.menux {color: #fff;margin: 10px;line-height: 3rem;font-size: 1.5rem;}
+.btnx {padding: 5px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555; }
