@@ -16,7 +16,7 @@ body {font-family: arial;background: #938982;text-align: center;margin: 0 auto;m
 .menutop2-1{padding-left: 20px;}
 .img-box-index {width: 100%;border-radius: 5px;margin-bottom: 3px;}
 .img-box-android {width: 100%;max-width: 445px; max-height: 222px;border-radius: 5px;margin-bottom: 3px;}
-.img-box-ios {width: 100%;border-radius: 5px;margin-bottom: 3px;}
+.img-box-ios {width: 100%;max-width: 445px; max-height: 250px;border-radius: 5px;margin-bottom: 3px;}
 
 
 
