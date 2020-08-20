@@ -9,12 +9,12 @@ body {font-family: arial;background: #938982;text-align: center;margin: 0 auto;m
     font-size: 1rem;
     font-weight: bold;
     color: #555; }
-
+.img-menu{max-width: 250px;float: left;margin: 10px;}
 .filterDiv2 {float: left;color: #ffffff;text-align: center;margin: 10px;max-width: 325px;margin-bottom: 20px;box-shadow: 1px 5px 5px #000;border-radius: 5px;background:#222;}
 .menutop1{float: left;padding: 0 10px;color: #fff;}
 .menutop2{float: right;padding: 20px;color: #fff;font-size: 1.1rem;}
 .menutop2-1{padding-left: 20px;}
-.img-box-index {width: 100%;border-radius: 5px;margin-bottom: 3px;}
+.img-box-index {box-shadow: 1px 5px 5px #000;width: 100%;border-radius: 5px;margin-bottom: 3px;}
 .img-box-android {width: 100%;max-width: 445px; max-height: 222px;border-radius: 5px;margin-bottom: 3px;}
 .img-box-ios {width: 100%;max-width: 445px; max-height: 250px;border-radius: 5px;margin-bottom: 3px;}
 
