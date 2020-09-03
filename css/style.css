@@ -1,6 +1,6 @@
 
 
-body {font-family: arial;background: #2a313d;text-align: center;margin: 0 auto;max-width: 1400px;
+body {width:100%;font-family: arial;background: #2a313d;text-align: center;margin: 0 auto;max-width: 1400px;
 color:#fff;}
 .filterDiv-index {float: left;color: #ffffff;text-align: center;margin: 10px;max-width: 210px;margin-bottom: 20px;box-shadow: 1px 5px 5px #000;border-radius: 5px;background:#222;}
 .filterDiv-thucthan {float: left;color: #ffffff;text-align: center;margin: 10px;max-width: 212px;margin-bottom: 20px;box-shadow: 1px 5px 5px #000;border-radius: 5px;background:#222;}
@@ -26,10 +26,13 @@ color:#fff;}
   display: block;
 }
 
-.container {
-margin: 0 auto; padding-top: 30px;
-  overflow: hidden;
-}
+.container {margin: 0 auto; padding-top: 30px;overflow: hidden;}
+.container-post {  
+margin: 0 auto;
+    overflow: hidden;
+    max-width: 900px;
+    padding: 20px;
+	}
 
 /* Style the buttons */
 .btn {
@@ -58,7 +61,20 @@ background-color: #f1f1f1;
 	margin:10px;
     box-shadow: 1px 1px 5px #333;margin-top:50px;
 }
+.post1{   
 
+    display: block;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px 10px;
+    line-height: 1.4rem;
+	
+	}
+.post1 h2 {line-height: 2.5rem;   
+    text-align: center;
+    font-size: 2rem;}
+.container h2 { padding: 10px;}
 a {color:#fff;text-decoration: none;}
 
 .menu-activex {background: #333;padding: 5px 10px;border-radius: 5px;margin: 10px;}
@@ -68,6 +84,8 @@ a {color:#fff;text-decoration: none;}
     font-weight: bold;
     color: #555; }
 	
+.container h1 {font-size:3rem}	
+.footer h5 {border-top: solid 1px #555;padding: 20px;margin: 0 auto;font-weight: normal;}
 	
 	
 @media (max-width: 549px){
@@ -77,7 +95,8 @@ a {color:#fff;text-decoration: none;}
 .filterDiv-thucthan	{float: none;margin: 0 auto;margin-bottom: 20px;}
 .container {padding-top: 20px;}		
 .myBtnContainer{margin-top:20px;}		
-
+.img-menu{max-width: 43%;float: left;margin: 10px;}
+.container h1 {font-size:2.5rem}
 }
 	
 	
