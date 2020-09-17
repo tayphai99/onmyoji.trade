@@ -5,7 +5,7 @@ color:#fff;}
 .filterDiv-index {float: left;color: #ffffff;text-align: center;margin: 10px;max-width: 210px;margin-bottom: 20px;box-shadow: 1px 5px 5px #000;border-radius: 5px;background:#222;}
 .filterDiv-thucthan {float: left;color: #ffffff;text-align: center;margin: 10px;max-width: 212px;margin-bottom: 20px;box-shadow: 1px 5px 5px #000;border-radius: 5px;background:#222;}
 .filterDiv-acc {float: left;color: #ffffff;text-align: center;margin: 10px;display: none;max-width: 380px;margin-bottom: 20px;box-shadow: 1px 5px 5px #000;border-radius: 5px;background:#222;}
-.filter-icon {width: 50px;}
+.filter-icon {width: 60px;}
 .btnx {padding: 5px 10px;
     font-size: 1rem;
     font-weight: bold;
