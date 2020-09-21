@@ -74,7 +74,7 @@ background-color: #f1f1f1;
 .post1 h2 {line-height: 2.5rem;   
     text-align: center;
     font-size: 2rem;}
-.container h2 { padding: 10px;font-size: 1.1rem;}
+.container h2 { padding: 0 10px;font-size: 1.1rem;}
 a {color:#fff;text-decoration: none;}
 
 .menu-activex {background: #333;padding: 5px 10px;border-radius: 5px;margin: 10px;}
@@ -84,7 +84,7 @@ a {color:#fff;text-decoration: none;}
     font-weight: bold;
     color: #555; }
 	
-.container h1 {font-size:2.5rem}	
+.container h1 {font-size:2.5rem;margin-block-end: 0;}	
 .footer h5 {border-top: solid 1px #555;padding: 20px;margin: 0 auto;font-weight: normal;}
 	
 	
