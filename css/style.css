@@ -19,7 +19,7 @@ color:#fff;}
 .img-box-android {width: 100%;max-width: 445px; max-height: 222px;border-radius: 5px;margin-bottom: 3px;}
 .img-box-ios {width: 100%;max-width: 445px; max-height: 250px;border-radius: 5px;margin-bottom: 3px;}
 .ttacc{ padding: 5px;display: block;line-height: 1.5rem;}
-.giaacc{display: block;}
+.giaacc{display: none;}
 
 
 .show {
