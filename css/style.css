@@ -1,10 +1,10 @@
  
 
-body {width:100%;font-family: arial;background: #2a313d;text-align: center;margin: 0 auto;max-width: 1200px;
+body {width:100%;font-family: arial;background: #2a313d;text-align: center;margin: 0 auto;max-width: 1244px;
 color:#fff;}
 .filterDiv-index {float: left;color: #ffffff;text-align: center;margin: 10px;max-width: 210px;margin-bottom: 20px;box-shadow: 1px 5px 5px #000;border-radius: 5px;background:#222;}
 .filterDiv-thucthan {float: left;color: #ffffff;text-align: center;margin: 10px;max-width: 212px;margin-bottom: 20px;box-shadow: 1px 5px 5px #000;border-radius: 5px;background:#222;}
-.filterDiv-acc {float: left;color: #ffffff;text-align: center;margin: 10px;display: none;max-width: 380px;margin-bottom: 20px;box-shadow: 1px 5px 5px #000;border-radius: 5px;background:#222;}
+.filterDiv-acc {float: left;color: #ffffff;text-align: center;margin: 10px;display: none;max-width: 600px;margin-bottom: 20px;box-shadow: 1px 5px 5px #000;border-radius: 5px;background:#222;}
 .filter-icon {width: 60px;}
 .btnx {padding: 5px 10px;
     font-size: 1rem;
@@ -16,10 +16,10 @@ color:#fff;}
 .menutop2{float: right;padding: 20px;color: #fff;font-size: 1.1rem;}
 .menutop2-1{padding-left: 20px;}
 .img-box-index {width: 100%;border-radius: 5px;margin-bottom: 3px;}
-.img-box-android {width: 100%;max-width: 445px; max-height: 222px;border-radius: 5px;margin-bottom: 3px;}
+.img-box-android {width: 100%;border-radius: 5px 5px 0 0;margin-bottom: 3px;}
 .img-box-ios {width: 100%;max-width: 445px; max-height: 250px;border-radius: 5px;margin-bottom: 3px;}
 .ttacc{ padding: 5px;display: block;line-height: 1.5rem;}
-.giaacc{display: none;}
+.giaacc{}
 
 
 .show {
