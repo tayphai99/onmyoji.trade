@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>  
+<head>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		
+		
+<style>
+body{
+	background-color: var(--devsite-page-background,#e8eaed);
+    color: #202124;
+    font: 400 16px/24px Roboto,Noto Sans,Noto Sans JP,Noto Sans KR,Noto Naskh Arabic,Noto Sans Thai,Noto Sans Hebrew,Noto Sans Bengali,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+    margin: 0;
+}
+.tayphai-content{
+	margin: 0 auto;
+    max-width: 936px;
+    padding: 50px 0;
+}
+.tayphai-article{
+	border: var(--devsite-page-border,0);
+    border-radius: var(--devsite-page-border-radius,2px);
+    box-shadow: var(--devsite-page-box-shadow,0 1px 2px 0 rgba(60,64,67,.3),0 1px 3px 1px rgba(60,64,67,.15));
+    background-color: #fff;
+    padding: 40px;
+	margin: 10px;
+}
+
+dd, ol, ul {
+    margin: 0;
+}
+:link, :visited {
+    color: #1a73e8;
+    outline: 0;
+    text-decoration: none;
+    word-break: break-word;
+}
+.tayphai-breadcrumb-link{
+    color: #5f6368;
+	}
+.tayphai-breadcrumb-list{
+	display: inline-flex;
+	font-size: 13px;
+	margin: 0;
+    padding: 0;
+}
+.tayphai-breadcrumb-item a{
+	    color: #5f6368;
+}
+.tayphai-breadcrumb-item a:hover{
+	    color: #1a73e8;
+}
+.tayphai-breadcrumb-item{
+	-webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    margin: 0;	
+	padding-right: 20px;
+}
+.tayphai-article h1 {
+	font: var(--devsite-h1-font,300 34px/40px Roboto,Noto Sans,Noto Sans JP,Noto Sans KR,Noto Naskh Arabic,Noto Sans Thai,Noto Sans Hebrew,Noto Sans Bengali,sans-serif);
+    letter-spacing: var(--devsite-h1-letter-spacing,-.01em);
+    margin: var(--devsite-h1-margin,40px 0 20px);
+    margin-top: 20px;
+}
+.tayphai-article h2 {
+	font: 300 24px/32px Roboto,Noto Sans,Noto Sans JP,Noto Sans KR,Noto Naskh Arabic,Noto Sans Thai,Noto Sans Hebrew,Noto Sans Bengali,sans-serif;
+    padding-top: 20px;
+
+}
+
+/* Style the filter */
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Scroll Back To Top Button */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #1a73e8;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+/* Tier List - Top Tướng Trong Genshin Impact */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #444;}
+
+
+.tier-list-img{width:60px;}
+li{line-height: 1.7rem;}
+li:hover {text-decoration: underline;}
+.margin-50-0 {margin: 50px 0;}
+.background-dark {background: #333;color: #fff;}
+</style>	
+		
+		
+		
+		
+		</head>
+<body>
+<!--
+<div class="tayphai-content">
+	<div class="tayphai-article">
+		<div class="tayphai-breadcrumb-link">
+			<ul class="tayphai-breadcrumb-list">
+				<li class="tayphai-breadcrumb-item"><a href="#">Home</a></li>
+				<li class="tayphai-breadcrumb-item"><a href="#">Onmyoji Global Guide</a></li>
+			</ul>	
+		</div>
+		
+				<h1>Onmyoji Global Guide</h1>
+				<h2>Tra cứu mọi thông tin mới nhất về game Genshin Impact (tiếng việt)</h2>
+		
+				<ul>
+					<li><a href="#tier-list">Tier List - Top Nhân vật Trong Genshin Impact</a></li>
+					<li><a href="#nguyen-lieu-boi-duong-thien-phu-nhan-vat">Nguyên Liệu Bồi Dưỡng Thiên Phú Nhân Vật</a></li>
+					<li><a href="#">Nguyên Liệu Đột Phá Nhân Vật</a></li>
+					<li><a href="#">Nguyên Liệu Đột Phá Phá Vũ Khí</a></li>
+					<li><a href="#">Danh Sách Vũ Khí</a></li>
+					<li><a href="#">Danh Sách Thánh Di Vật</a></li>
+					<li><a href="#">Nguyên Tố Và Cộng Hưởng Nguyên Tố</a></li>
+					<li><a href="#">Danh Sách Các Món Ăn</a></li>
+				</ul>
+	</div>
+</div>
+
+
+
+<hr id="tier-list" />-->
+<div class="tayphai-content">
+	<div class="tayphai-article background-dark">
+			<h2>Tier List - Onmyoji Global</h2>
+		
+			<table>
+			  <tr><th>SP</th><th>DUEL</th><th>RAID</th><th>FARM</th><th>BOSS</th><th>SCRT</th></tr>
+			  
+			  <tr><td><img class="tier-list-img" src="icon/Matsuyoi-Ubume.png" /></td><td>A</td><td>S</td><td>A</td><td>A</td><td>A</td></tr>
+			  <tr><td><img class="tier-list-img" src="icon/Rokumei-Ootakemaru.png" /></td><td>SS</td><td>B</td><td>B</td><td>S</td><td>S</td></tr>
+			  <tr><td><img class="tier-list-img" src="icon/SP-Tamamo-no-Mae.png" /></td><td>B</td><td>A</td><td>SS</td><td>S</td><td>SS</td></tr>
+			  <tr><td><img class="tier-list-img" src="icon/SP-Shuten-Doji.png" /></td><td>SS</td><td>SS</td><td>S</td><td>A</td><td>SS</td></tr>
+			  <tr><td><img class="tier-list-img" src="icon/SP-Ibaraki-Doji.png" /></td><td>C</td><td>SS</td><td>SS</td><td>B</td><td>S</td></tr>
+			  <tr><td><img class="tier-list-img" src="icon/SP-Bakkotsu-Kiyohime.png" /></td><td>SS</td><td>B</td><td>D</td><td>C</td><td>B</td></tr>
+			  <tr><td><img class="tier-list-img" src="icon/SP-Onikiri.png" /></td><td>S</td><td>D</td><td>D</td><td>D</td><td>D</td></tr>
+			  <tr><td><img class="tier-list-img" src="icon/SP-Ootengu.png" /></td><td>B</td><td>B</td><td>A</td><td>C</td><td>A</td></tr>
+			  <tr><td><img class="tier-list-img" src="icon/SP-Oura-Hannya.png" /></td><td>SS</td><td>S</td><td>B</td><td>B</td><td>A</td></tr>
+			  <tr><td><img class="tier-list-img" src="icon/SP-Reikai-Kingyo-Hime.png" /></td><td>S</td><td>B</td><td>D</td><td>C</td><td>A</td></tr>
+			  <tr><td><img class="tier-list-img" src="icon/SP-Miketsu.png" /></td><td>A</td><td>C</td><td>D</td><td>D</td><td>C</td></tr>
+			  <tr><td><img class="tier-list-img" src="icon/SP-Aoandon.png" /></td><td>B</td><td>C</td><td>D</td><td>D</td><td>B</td></tr>
+			  <tr><td><img class="tier-list-img" src="icon/SP-Yoto-Hime.png" /></td><td>B</td><td>B</td><td>B</td><td>A</td><td>A</td></tr>
+			  <tr><td><img class="tier-list-img" src="icon/SP-Ichimoku-Ren.png" /></td><td>B</td><td>C</td><td>D</td><td>D</td><td>C</td></tr>
+			  <tr><td><img class="tier-list-img" src="icon/SP-Arakawa-no-Aruji.png" /></td><td>B</td><td>D</td><td>D</td><td>D</td><td>D</td></tr>
+			</table>
+			 
+			<hr class="margin-50-0" />			 
+			
+			<table>
+			  <tr><th>SSR</th><th>Vai trò</th><th>Hạng</th><th>Abyss</th><th>Dungeon</th><th>Boss</th></tr>
+			  <tr><td><img class="tier-list-img" src="icon/Fischl.png" /></td><td>Support</td><td>S</td><td>S</td><td>S</td><td>S</td></tr>
+			  <tr><td><img class="tier-list-img" src="icon/Razor.png" /></td><td>DPS</td><td>S</td><td>S</td><td>S</td><td>S</td></tr>
+			  <tr><td><img class="tier-list-img" src="icon/Xiangling.png" /></td><td>DPS</td><td>S</td><td>S</td><td>S</td><td>S</td></tr>
+			  <tr><td><img class="tier-list-img" src="icon/Chongyun.png" /></td><td>DPS</td><td>S</td><td>S</td><td>S</td><td>S</td></tr>
+			  <tr><td><img class="tier-list-img" src="icon/Barbara.png" /></td><td>Healer</td><td>S</td><td>S</td><td>S</td><td>S</td></tr>
+			  <tr><td><img class="tier-list-img" src="icon/Xingqiu.png" /></td><td>Support</td><td>A</td><td>S</td><td>A</td><td>A</td></tr>	
+			  <tr><td><img class="tier-list-img" src="icon/Bennett.png" /></td><td>DPS</td><td>A</td><td>A</td><td>A</td><td>A</td></tr>
+			  <tr><td><img class="tier-list-img" src="icon/Ningguang.png" /></td><td>DPS</td><td>A</td><td>B</td><td>B</td><td>A</td></tr>
+			  <tr><td><img class="tier-list-img" src="icon/Noelle.png" /></td><td>DPS</td><td>A</td><td>A</td><td>B</td><td>B</td></tr>		  
+			  <tr><td><img class="tier-list-img" src="icon/Kaeya.png" /></td><td>Support</td><td>B</td><td>B</td><td>B</td><td>A</td></tr>
+			  <tr><td><img class="tier-list-img" src="icon/Lisa.png" /></td><td>Support</td><td>B</td><td>B</td><td>B</td><td>B</td></tr>
+			  <tr><td><img class="tier-list-img" src="icon/Sucrose.png" /></td><td>Support</td><td>B</td><td>A</td><td>B</td><td>B</td></tr>
+			  <tr><td><img class="tier-list-img" src="icon/Beidou.png" /></td><td>DPS</td><td>B</td><td>B</td><td>B</td><td>B</td></tr>
+			  <tr><td><img class="tier-list-img" src="icon/Amber.png" /></td><td>Support</td><td>C</td><td>C</td><td>C</td><td>C</td></tr>
+			</table>	
+			
+			<p>Xếp hạng nhân vật đưa tham khảo từ nhiều nguồn khác nhau, xếp hạng các nhân vật 5* và 4* là riêng biệt, xếp hạng có thể được thay đổi dựa trên việc tăng giảm sức mạnh của mỗi nhân vật qua từng bản cập nhập khác nhau.</p>	
+	</div>
+</div>
+
+
+
+
+
+
+
+<hr id="nguyen-lieu-boi-duong-thien-phu-nhan-vat" />
+<div class="tayphai-content ">
+	<div class="tayphai-article background-dark">
+			<h2>Nguyên Liệu Bồi Dưỡng Thiên Phú Nhân Vật</h2>
+			
+			<table>
+			  <tr><th>Nguyên Liệu</th><th>Ngày</th><th>Nhân vật</th></tr>
+			  <tr><td><img class="tier-list-img" src="Items/Freedom.png" /></td><td>Thứ hai, thứ năm</td><td>
+					<img class="tier-list-img" src="icon/Klee.png" />
+					<img class="tier-list-img" src="icon/Barbara.png" />
+					<img class="tier-list-img" src="icon/Sucrose.png" />
+					<img class="tier-list-img" src="icon/Amber.png" />
+			  </td></tr>
+			  
+			  <tr><td><img class="tier-list-img" src="Items/Prosperity.png" /></td><td>Thứ hai, thứ năm</td><td>
+					<img class="tier-list-img" src="icon/Keqing.png" />
+					<img class="tier-list-img" src="icon/Qiqi.png" />
+					<img class="tier-list-img" src="icon/Xiao.png" />
+					<img class="tier-list-img" src="icon/Ningguang.png" />
+			  </td></tr>
+			  
+			  <tr><td><img class="tier-list-img" src="Items/Diligence.png" /></td><td>Thứ ba, thứ sáu</td><td>
+					<img class="tier-list-img" src="icon/Xiangling.png" />
+					<img class="tier-list-img" src="icon/Chongyun.png" />
+			  </td></tr>
+			  
+			  <tr><td><img class="tier-list-img" src="Items/Resistance.png" /></td><td>Thứ ba, thứ sáu</td><td>
+					<img class="tier-list-img" src="icon/Diluc.png" />
+					<img class="tier-list-img" src="icon/Mona.png" />
+					<img class="tier-list-img" src="icon/Jean.png" />
+					<img class="tier-list-img" src="icon/Razor.png" />
+					<img class="tier-list-img" src="icon/Bennett.png" />
+					<img class="tier-list-img" src="icon/Noelle.png" />
+			  </td></tr>
+			  
+			  <tr><td><img class="tier-list-img" src="Items/Ballad.png" /></td><td>Thứ tư, thứ bảy</td><td>
+			  		<img class="tier-list-img" src="icon/Venti.png" />
+					<img class="tier-list-img" src="icon/Fischl.png" />
+					<img class="tier-list-img" src="icon/Kaeya.png" />
+					<img class="tier-list-img" src="icon/Lisa.png" />
+			  </td></tr>
+			  
+			  <tr><td><img class="tier-list-img" src="Items/Gold.png" /></td><td>Thứ tư, thứ bảy</td><td>
+					<img class="tier-list-img" src="icon/Xingqiu.png" />
+					<img class="tier-list-img" src="icon/Beidou.png" />
+			  </td></tr>
+			  
+			</table>	
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="tayphai-content">
+	<div class="tayphai-article">
+		<h1>Precompiled Utilities</h1>
+					
+					<div id="myBtnContainer">
+					  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+					  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+					  <button class="btn" onclick="filterSelection('animals')"> Animals</button>
+					  <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
+					  <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+					</div>
+
+					<div class="container">
+					  <div class="filterDiv cars">BMW</div>
+					  <div class="filterDiv colors fruits">Orange</div>
+					  <div class="filterDiv cars">Volvo</div>
+					  <div class="filterDiv colors">Red</div>
+					  <div class="filterDiv cars animals">Mustang</div>
+					  <div class="filterDiv colors">Blue</div>
+					  <div class="filterDiv animals">Cat</div>
+					  <div class="filterDiv animals">Dog</div>
+					  <div class="filterDiv fruits">Melon</div>
+					  <div class="filterDiv fruits animals">Kiwi</div>
+					  <div class="filterDiv fruits">Banana</div>
+					  <div class="filterDiv fruits">Lemon</div>
+					  <div class="filterDiv animals">Cow</div>
+					  
+					  					  <div class="filterDiv cars">BMW</div>
+					  <div class="filterDiv colors fruits">Orange</div>
+					  <div class="filterDiv cars">Volvo</div>
+					  <div class="filterDiv colors">Red</div>
+					  <div class="filterDiv cars animals">Mustang</div>
+					  <div class="filterDiv colors">Blue</div>
+					  <div class="filterDiv animals">Cat</div>
+					  <div class="filterDiv animals">Dog</div>
+					  <div class="filterDiv fruits">Melon</div>
+					  <div class="filterDiv fruits animals">Kiwi</div>
+					  <div class="filterDiv fruits">Banana</div>
+					  <div class="filterDiv fruits">Lemon</div>
+					  <div class="filterDiv animals">Cow</div>
+					  
+					  					  <div class="filterDiv cars">BMW</div>
+					  <div class="filterDiv colors fruits">Orange</div>
+					  <div class="filterDiv cars">Volvo</div>
+					  <div class="filterDiv colors">Red</div>
+					  <div class="filterDiv cars animals">Mustang</div>
+					  <div class="filterDiv colors">Blue</div>
+					  <div class="filterDiv animals">Cat</div>
+					  <div class="filterDiv animals">Dog</div>
+					  <div class="filterDiv fruits">Melon</div>
+					  <div class="filterDiv fruits animals">Kiwi</div>
+					  <div class="filterDiv fruits">Banana</div>
+					  <div class="filterDiv fruits">Lemon</div>
+					  <div class="filterDiv animals">Cow</div>
+					  
+					  					  <div class="filterDiv cars">BMW</div>
+					  <div class="filterDiv colors fruits">Orange</div>
+					  <div class="filterDiv cars">Volvo</div>
+					  <div class="filterDiv colors">Red</div>
+					  <div class="filterDiv cars animals">Mustang</div>
+					  <div class="filterDiv colors">Blue</div>
+					  <div class="filterDiv animals">Cat</div>
+					  <div class="filterDiv animals">Dog</div>
+					  <div class="filterDiv fruits">Melon</div>
+					  <div class="filterDiv fruits animals">Kiwi</div>
+					  <div class="filterDiv fruits">Banana</div>
+					  <div class="filterDiv fruits">Lemon</div>
+					  <div class="filterDiv animals">Cow</div>
+					  
+					  					  <div class="filterDiv cars">BMW</div>
+					  <div class="filterDiv colors fruits">Orange</div>
+					  <div class="filterDiv cars">Volvo</div>
+					  <div class="filterDiv colors">Red</div>
+					  <div class="filterDiv cars animals">Mustang</div>
+					  <div class="filterDiv colors">Blue</div>
+					  <div class="filterDiv animals">Cat</div>
+					  <div class="filterDiv animals">Dog</div>
+					  <div class="filterDiv fruits">Melon</div>
+					  <div class="filterDiv fruits animals">Kiwi</div>
+					  <div class="filterDiv fruits">Banana</div>
+					  <div class="filterDiv fruits">Lemon</div>
+					  <div class="filterDiv animals">Cow</div>
+					  
+					  					  <div class="filterDiv cars">BMW</div>
+					  <div class="filterDiv colors fruits">Orange</div>
+					  <div class="filterDiv cars">Volvo</div>
+					  <div class="filterDiv colors">Red</div>
+					  <div class="filterDiv cars animals">Mustang</div>
+					  <div class="filterDiv colors">Blue</div>
+					  <div class="filterDiv animals">Cat</div>
+					  <div class="filterDiv animals">Dog</div>
+					  <div class="filterDiv fruits">Melon</div>
+					  <div class="filterDiv fruits animals">Kiwi</div>
+					  <div class="filterDiv fruits">Banana</div>
+					  <div class="filterDiv fruits">Lemon</div>
+					  <div class="filterDiv animals">Cow</div>
+					  
+					  					  <div class="filterDiv cars">BMW</div>
+					  <div class="filterDiv colors fruits">Orange</div>
+					  <div class="filterDiv cars">Volvo</div>
+					  <div class="filterDiv colors">Red</div>
+					  <div class="filterDiv cars animals">Mustang</div>
+					  <div class="filterDiv colors">Blue</div>
+					  <div class="filterDiv animals">Cat</div>
+					  <div class="filterDiv animals">Dog</div>
+					  <div class="filterDiv fruits">Melon</div>
+					  <div class="filterDiv fruits animals">Kiwi</div>
+					  <div class="filterDiv fruits">Banana</div>
+					  <div class="filterDiv fruits">Lemon</div>
+					  <div class="filterDiv animals">Cow</div>
+					  
+					  					  <div class="filterDiv cars">BMW</div>
+					  <div class="filterDiv colors fruits">Orange</div>
+					  <div class="filterDiv cars">Volvo</div>
+					  <div class="filterDiv colors">Red</div>
+					  <div class="filterDiv cars animals">Mustang</div>
+					  <div class="filterDiv colors">Blue</div>
+					  <div class="filterDiv animals">Cat</div>
+					  <div class="filterDiv animals">Dog</div>
+					  <div class="filterDiv fruits">Melon</div>
+					  <div class="filterDiv fruits animals">Kiwi</div>
+					  <div class="filterDiv fruits">Banana</div>
+					  <div class="filterDiv fruits">Lemon</div>
+					  <div class="filterDiv animals">Cow</div>
+					  
+					  					  <div class="filterDiv cars">BMW</div>
+					  <div class="filterDiv colors fruits">Orange</div>
+					  <div class="filterDiv cars">Volvo</div>
+					  <div class="filterDiv colors">Red</div>
+					  <div class="filterDiv cars animals">Mustang</div>
+					  <div class="filterDiv colors">Blue</div>
+					  <div class="filterDiv animals">Cat</div>
+					  <div class="filterDiv animals">Dog</div>
+					  <div class="filterDiv fruits">Melon</div>
+					  <div class="filterDiv fruits animals">Kiwi</div>
+					  <div class="filterDiv fruits">Banana</div>
+					  <div class="filterDiv fruits">Lemon</div>
+					  <div class="filterDiv animals">Cow</div>
+					  
+					  
+					  
+					  
+					</div>
+	</div>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+
+
+
+
+
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+</body>
+</html>
