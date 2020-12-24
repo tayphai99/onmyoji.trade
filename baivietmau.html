@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>  
+<head>
+		
+		        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="data/favicon.png" type="image/png">
+        <title>Tayphai.com</title>
+		<meta name="description" content="buy game accounts" />
+		<meta name="keywords" content="buy game accounts" />
+		<meta name="robots" content="noodp,index,follow" />
+		<link rel="stylesheet" href="../data/style.css">
+</head>
+<!--includeHTML-->
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+<body>
+<div w3-include-html="../data/menu.html"></div> 
+	<div class="box-1"><h1>Anime for Beginners: 20 Pieces of Essential Viewing</h1></div>
+	<div class="box-2"><img src="https://technext.github.io/anime/img/blog/details/blog-details-pic.jpg" /></div>
+	<div class="box-3">
+
+<p>As a result the last couple of eps haven’t been super exciting for me, because they’ve been more like settling into a familiar and comfortable routine.  We’re seeing character growth here but it’s subtle (apart from Shouyou, arguably).  I mean, Tobio being an asshole is nothing new – it’s kind of the foundation of his entire character arc.  Confronting whether his being an asshole is a problem for the Crows this directly is a bit of an evolution, and probably an overdue one at that, but the overall dynamic with Kageyama is basically unchanged.</p>
+<h2>Tobio-Nishinoya showdown:</h2>
+<img src="https://technext.github.io/anime/img/blog/details/bd-item-1.jpg" />
+<p>As a result the last couple of eps haven’t been super exciting for me, because they’ve been more like settling into a familiar and comfortable routine.  We’re seeing character growth here but it’s subtle (apart from Shouyou, arguably).  I mean, Tobio being an asshole is nothing new – it’s kind of the foundation of his entire character arc.  Confronting whether his being an asshole is a problem for the Crows this directly is a bit of an evolution, and probably an overdue one at that, but the overall dynamic with Kageyama is basically unchanged.</p>
+	
+	<div w3-include-html="../data/qc1.html"></div> 
+	
+<h2>Tobio-Nishinoya showdown:</h2>
+<img src="https://technext.github.io/anime/img/blog/details/bd-item-2.jpg" />
+ 
+    <div w3-include-html="../data/qc2.html"></div>             
+	</div>
+  <div w3-include-html="../data/footer.html"></div>   
+<!--Menu-->
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<!--includeHTML-->
+<script>includeHTML();</script>
+</body>
+</html>
